@@ -1,0 +1,30 @@
+.maxwidth{
+    max-width: 90%;
+    #home_title{
+        margin-top: 50px;
+    }
+}
+
+.purple_color{
+    background-color: rgb(119, 91, 125);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    p{
+        text-align: left;
+    }
+    .card-text{
+        color: black;
+        height: 200px;
+        text-align: left;
+    }
+    h5{
+        color: black;
+        text-align: left;
+    }   
+}
+.modulecard{
+    width: 18rem;
+    max-height: 600px;
+    margin: 0px 20px;
+}

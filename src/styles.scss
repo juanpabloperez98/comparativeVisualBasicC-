@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~prismjs/plugins/toolbar/prism-toolbar.css";
+@import "~prismjs/plugins/line-numbers/prism-line-numbers.css";
+@import "~prismjs/themes/prism-dark";
+
+$base-color: rgb(119,91,125);
+$base-color-buttons: rgb(173, 132, 182);
+body{
+    margin: 0;
+}
+.navbar{
+    background-color: $base-color;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.tag_a_brand{
+    max-width: 90px;
+    img{
+        width: 100%;
+        animation: palpar 1.5s alternate infinite ease-in;
+        @keyframes palpar {
+            0% {
+                transform: scale(.8);
+            }
+            50% {
+                transform: scale(.9);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    }
+}
+.container-fluid{
+    max-width: 1200px;
+}
+.white_section{
+    background-color: white;
+}
+.purple_color{
+    background-color: $base-color;
+    color: white;
+}
+.maxwidth{
+    max-width: 90%;
+}
+.btn_purpel_color{
+    background-color: rgb(119, 91, 125);
+    color: white;
+}
+.btn_purpel_color:hover{
+    background-color: rgb(189, 152, 197);
+}
+.initial-section{
+    padding-top: 100px;
+}
+.show-example-purple{
+  background-color: $base-color-buttons;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  animation: changecolor 1.5s alternate infinite ease-in;
+  @keyframes changecolor {
+    0% {
+      padding: 9px;
+    }
+
+    100%{
+      padding: 11px;
+    }
+}
+}
+.show-example-purple:hover{
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+}
+.desactivate{
+   display: none;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.line_paint{
+  content: '';
+  width: 100%;
+  display: inline-block;
+  background-color: rgba(255,255,255, 0.2);
+  position: absolute;
+  left: 0px;
+}
+.arrow_tag{
+  cursor: pointer;
+}

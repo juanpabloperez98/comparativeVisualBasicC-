@@ -1,0 +1,81 @@
+<section class="initial-section">
+    <div class="row mx-auto maxwidth">
+        <div class="col-12 col-lg-6">
+            <img [src]="logo_cv" alt="logo_cv.png">
+        </div>
+        <div class="col-12 col-lg-6" id="home_title">
+            <h3 class="text-center">Aprendizaje de programación imperativa en visual Basic y C Sharp</h3>
+            <p>
+                Este software es desarrollado por la universidad tecnológica de Pereira, en este se busca tener una introducción y un proceso de aprendizaje de la programación imperativa en los lenguajes de programación Visual Basic y C Sharp, adicional a esto se tiene como objetivo servir de herramienta de apoyo para los estudiantes que apenas se están adentrando al mundo de la programación imperativa, la idea principal del software es poder explicar la programación imperativa en los lenguajes mencionados anteriormente haciendo una comparativa sobre como realizar diversos problemas que se pueden encontrar a la hora de programar.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="purple_color">
+    <div class="row mx-auto maxwidth">
+        <div class="col-12 col-lg-12">
+            <h3>¿De que trata este software?</h3>
+            <p>
+                Como se menciono anteriormente, el software busca ser una guía o herramienta de apoyo para las personas que apenas se estén adentrando en el mundo de la programación imperativa, haciendo una comparación entre los lenguajes Visual Basic y C Sharp, es por eso que este software tiene un apartado total de 6 módulos, en los cuales se podrán encontrar temas en relación a cada módulo, cada tema o sección contara con unos ejemplos prácticos y unos ejercicios con los cuales se busca afianzar el conocimiento adquirido en dichas secciones. El estudiante es libre de escoger el módulo al que desea entrar, se recomienda llevar la secuencia de los módulos para mayor entendimiento y compresión
+            </p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="row mx-auto maxwidth">
+        <div class="col-12" id="home_title">
+            <h3 class="text-center">¿Por que C# y Visual Basic?</h3>
+            <p class="mt-3">
+                Antes de empezar hablar de Visual Basic o C Sharp es importante mencionar o hablar de lo que es .NET, básicamente .NET es una plataforma que nos proporciona Microsoft la cual viene integrada con diferentes herramientas que permiten el desarrollo de aplicaciones, de esas herramientas mencionadas están incluidas los lenguajes de programación Visual Basic y C Sharp. Los dos lenguajes de programación soportan paradigma imperativo, es por eso que el desarrollo de esta guía es basado en estos lenguajes, debido a su similitud y componentes que comparten.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="purple_color">
+    <div class="row mx-auto maxwidth">
+        <div class="col-12 col-lg-6">
+            <h3 class="text-center">Teoría</h3>
+            <p>
+                Cada módulo está compuesto de secciones, las cuales busca enseñar temas puntuales y específicos que se manejan en la programación imperativa, el conjunto de estas secciones conforma un módulo, cada sección tiene una parte teórica la cual busca adentrar al estudiante sobre los temas propuestos.
+            </p>
+        </div>
+        <div class="col-12 col-lg-6">
+            <h3 class="text-center">Practica</h3>
+            <p>
+                Así mismo cada sección que hace parte de un módulo contiene su parte práctica, este apartado tiene como fin, poder probar la habilidad y la destreza del estudiante que ha adquirido en la sección
+            </p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="row mx-auto maxwidth">
+        <div class="col-12" id="home_title">
+            <h3 class="text-center">Puntos a tocar en este software</h3>
+            <p class="mt-3">
+                Con el objetivo de poder cumplir con los criterios y formatos de evaluación, se menciona a continuación cuales objetivos son los que este software abarca:
+            </p>
+            <ul>
+                <li>ROBUSTEZ: Este software cuenta con un manual de usuario y un manual técnico el cual le permite tanto a la persona que lo va a usar como el que quiere saber como esta desarrollado el mismo tener una visión clara sobre el software y sus secciones más significativas</li>
+                <li>EXTENDIBILIDAD: A pesar de que este software no cuenta con una facilidad de añadírseles nuevas características, se cuenta con la documentación adecuada para poder implementar nuevas propiedades</li>
+                <li>MANTENIMIENTO: Se presenta una buena documentación para realizar cambios en el mismo</li>
+                <li>GRADO DE INVENCIÓN O INNOVACIÓN: A pesar de que SML es un lenguaje conocido, es difícil encontrar tutoriales y ejemplos de este lenguaje de programación, adicional de eso, este software cuenta con un sistema de ejemplos los cuales muestran el paso a paso de diferentes ejercicios aplicados en el lenguaje</li>
+            </ul>
+        </div>
+        <div class="col-12 text-center mt-sm-5">
+            <h3>Módulos</h3>
+            <p class="text-start my-md-3">
+                A continuación, se presentan los módulos con su nombre y una pequeña descripción, se muestran de manera ascendente esto con el fin de poder llevar la ruta de aprendizaje al estudiante, es de esta manera como se busca que el estudiante pueda adquirir el aprendizaje de manera mucho más amena.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="purple_color">
+    <div *ngFor="let module of modules" class="card d-inline-block modulecard">
+        <img [src]="module.img" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ module['name'] }}</h5>
+          <p class="card-text">{{ module['context'] }}</p>
+          <a [routerLink]="module['routerlink']"  class="btn btn_purpel_color">Vamos al módulo</a>
+        </div>
+      </div>
+</section>
