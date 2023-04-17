@@ -11,13 +11,14 @@ import { HighlightService } from 'src/app/services/highlight.service';
 export class Ejemplo2Component implements OnInit {
 
   current_line = 1;
-  max_line = 11;
+  max_line = 15;
   top1 = 16;
   top2 = 16;
   top_style1 = this.top1 + 'px';
   top_style2 = this.top2 + 'px';
-  line_to_jump = [4,5,6,7]
-  line_revese = [4]
+  line_to_jump = [4,7]
+  line_equal_jump = [4]
+  code_direction = 1;
 
   CODECSHARP = ` namespace Ejemplo1{
     class Program{
@@ -44,11 +45,11 @@ End Sub
 
   explain = [
     [
-      "Se empieza definiendo el namespace para el código C# y se define el segmento de función en el lenguaje Visual Basic",
+      "Se empieza definiendo el código, en este caso se le llama Ejemplo2",
       "",
     ],
     [
-      "Se declara la clase en en el lenguaje C#",
+      "Se define la clase en en código de C#",
       "",
     ],
     [
@@ -81,8 +82,8 @@ End Sub
     ]
   ]
 
-  text_explain = this.explain[this.current_line-1][0];
-  variable_line = this.explain[this.current_line-1][1];
+  text_explain = this.explain[this.current_line - 1][0];
+  variable_line = this.explain[this.current_line - 1][1];
 
   constructor(
     private highlightService: HighlightService,
@@ -97,30 +98,52 @@ End Sub
   }
 
   //************************************************************************ */
-  add_top = () => {
+  add_top_code1 = () => {
     this.top1 += 24
     this.top_style1 = this.top1 + 'px';
-    if(this.line_to_jump.includes(this.current_line)){
-      this.top2 += 24
-      this.top_style2 = this.top2 + 'px';
-    }
   }
-  add_reverse = () => {
-    switch(this.current_line){
-      case 4:{
 
+  add_top_code2 = () => {
+    this.top2 += 24
+    this.top_style2 = this.top2 + 'px';
+  }
+
+  change_code_dir = () => {
+    
+  }
+
+  add_top = () => {
+    if (this.code_direction == 1) {
+      this.add_top_code1()
+    } else if(this.code_direction == 2){
+      this.add_top_code2()
+    }else{
+      this.add_top_code1()
+      this.add_top_code2()
+    }
+    if (this.line_to_jump.includes(this.current_line)) {
+      if (this.code_direction == 1) {
+        this.add_top_code2()
+        this.code_direction = 2;
+      } else {
+        this.add_top_code1()
+        this.code_direction = 1;
+      }
+      if(this.line_equal_jump.includes(this.current_line)){
+        this.code_direction = 3;
       }
     }
   }
   change_explain = () => {
-    this.text_explain = this.explain[this.current_line-1][0];
-    this.variable_line = this.explain[this.current_line-1][1];
+    this.text_explain = this.explain[this.current_line - 1][0];
+    this.variable_line = this.explain[this.current_line - 1][1];
   }
   next = () => {
     if (this.current_line >= this.max_line) {
       return;
     }
     this.current_line += 1;
+    console.log(this.current_line);
     this.add_top();
     this.change_explain()
     if (this.current_line >= this.max_line) {
