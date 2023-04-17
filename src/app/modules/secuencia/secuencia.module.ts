@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { secuenciaRoutes } from './secuencia.routing';
 import { TheorySecuenciaComponent } from './theory-secuencia/theory-secuencia.component';
 import { Ejemplo1Component } from './ejemplos/ejemplo1/ejemplo1.component';
+import { Ejemplo2Component } from './ejemplos/ejemplo2/ejemplo2.component';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { Ejemplo1Component } from './ejemplos/ejemplo1/ejemplo1.component';
     MainComponent,
     TheorySecuenciaComponent,
     Ejemplo1Component,
+    Ejemplo2Component,
   ],
   imports: [
     CommonModule,

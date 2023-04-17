@@ -13,6 +13,10 @@ export const AppRoutes: Routes = [
       {
         path:'',
         loadChildren: () => import('./modules/secuencia/secuencia.module').then( m => m.SecuenciaModule)
+      },
+      {
+        path:'',
+        loadChildren: () => import('./modules/operadores/operadores.module').then( m => m.OperadoresModule)
       }
     ]
   },

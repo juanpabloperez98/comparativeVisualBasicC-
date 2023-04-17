@@ -1,0 +1,51 @@
+<p>ejemplo2 works!</p>
+<section class="initial-section maxwidth mx-auto">
+  <div class="row mx-auto">
+    <div class="col-4">
+      <h3 class="mb-3">Código en VisualBasic</h3>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-vb">{{ CODECVB }}</code>
+        <span class="line_paint" [style.top]="top_style2"> </span>
+      </pre>
+    </div>
+    <div class="col-4">
+      <h3 class="mb-3">Código en C#</h3>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-cs">
+          namespace Ejemplo2&#123;
+            class Program&#123;
+                static void Main(string[] args)&#123;
+                    int num1,num2,num3;
+                    num1 = 4;
+                    num2 = 3;
+                    num3 = 5;
+                    Console.WriteLine("Numeros: &#123;0&#125; - &#123;1&#125; - &#123;2&#125;",num2,num1,num3);
+                &#125;
+            &#125;
+        &#125;
+        </code>
+        <span class="line_paint" [style.top]="top_style1"> </span>
+      </pre>
+    </div>
+    <div class="col-4">
+      <div class="row mx-auto">
+        <div class="col-12">
+          <h5>Variables</h5>
+          <p class="pcontainerexplain">
+            {{ variable_line }}
+          </p>
+          <h5>Explicación</h5>
+          <p class="pcontainerexplain">
+            {{ text_explain }}
+          </p>
+        </div>
+        <div class="col-12 text-center">
+          <a class="show-example-purple" (click)="next()">Siguiente</a>
+          <!-- <a class="arrow_tag" (click)="next()">
+            <i class="arrow right"></i>
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

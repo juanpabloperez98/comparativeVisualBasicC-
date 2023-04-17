@@ -1,23 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import { HighlightService } from 'src/app/services/highlight.service';
-import { Location } from '@angular/common';
-
 import Swal from 'sweetalert2';
+import { Location } from '@angular/common';
+import { HighlightService } from 'src/app/services/highlight.service';
 
 @Component({
-  selector: 'app-ejemplo1',
-  templateUrl: './ejemplo1.component.html',
-  styleUrls: ['./ejemplo1.component.scss']
+  selector: 'app-ejemplo2',
+  templateUrl: './ejemplo2.component.html',
+  styleUrls: ['./ejemplo2.component.scss']
 })
-export class Ejemplo1Component implements OnInit {
+export class Ejemplo2Component implements OnInit {
 
   current_line = 1;
-  max_line = 9;
+  max_line = 11;
   top1 = 16;
   top2 = 16;
   top_style1 = this.top1 + 'px';
   top_style2 = this.top2 + 'px';
   line_to_jump = [4,5,6,7]
+  line_revese = [4]
 
   CODECSHARP = ` namespace Ejemplo1{
     class Program{
@@ -29,11 +29,17 @@ export class Ejemplo1Component implements OnInit {
       }
   }
   `
-  CODECVB = ` Public Sub Ejemplo1()
-    Dim MSJ As String
-    MSJ = "Hola mundo, este es mi primer programa"
-    MsgBox (MSJ)
-  End Sub
+  CODECVB = ` Public Sub Ejemplo2()
+  Dim num1 As Integer
+  Dim num2 As Integer
+  Dim num3 As Integer
+  num1 = 4
+  num2 = 3
+  num3 = 5
+  MsgBox (num2)
+  MsgBox (num1)
+  MsgBox (num3)
+End Sub
   `
 
   explain = [
@@ -97,6 +103,13 @@ export class Ejemplo1Component implements OnInit {
     if(this.line_to_jump.includes(this.current_line)){
       this.top2 += 24
       this.top_style2 = this.top2 + 'px';
+    }
+  }
+  add_reverse = () => {
+    switch(this.current_line){
+      case 4:{
+
+      }
     }
   }
   change_explain = () => {

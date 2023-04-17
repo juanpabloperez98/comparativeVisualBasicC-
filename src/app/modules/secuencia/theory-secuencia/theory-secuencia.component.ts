@@ -11,6 +11,7 @@ export class TheorySecuenciaComponent implements OnInit {
 
   TIPODATOSIMG = `../${environment.ASSETS_ICONS_PATH}/home/secuencia/tiposdatos.png`
   GO_EJ1 = '/estructuras_secuencia/tipos-datos/ejemplo1'
+  GO_EJ2 = '/estructuras_secuencia/tipos-datos/ejemplo2'
 
   // ejemplo 1
   CODECSHARP1 = ` namespace Variables_Constantes

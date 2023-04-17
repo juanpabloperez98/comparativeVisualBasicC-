@@ -12,6 +12,7 @@ export class MainComponent implements OnInit {
   EXPRESIONES = `../${environment.ASSETS_ICONS_PATH}/home/secuencia/operadores.png`
 
   PATH_TIPOS = '/estructuras_secuencia/tipos-datos'
+  PATH_OPERADORES = '/estructuras_secuencia/operadores'
 
   constructor() { }
 
