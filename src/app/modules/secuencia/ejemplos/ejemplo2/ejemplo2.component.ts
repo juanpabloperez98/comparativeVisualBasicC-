@@ -11,7 +11,7 @@ import { HighlightService } from 'src/app/services/highlight.service';
 export class Ejemplo2Component implements OnInit {
 
   current_line = 1;
-  max_line = 15;
+  max_line = 16;
   top1 = 16;
   top2 = 16;
   top_style1 = this.top1 + 'px';
@@ -108,10 +108,6 @@ End Sub
     this.top_style2 = this.top2 + 'px';
   }
 
-  change_code_dir = () => {
-    
-  }
-
   add_top = () => {
     if (this.code_direction == 1) {
       this.add_top_code1()
@@ -125,14 +121,28 @@ End Sub
       if (this.code_direction == 1) {
         this.add_top_code2()
         this.code_direction = 2;
-      } else {
+      } else if(this.code_direction == 2){
         this.add_top_code1()
         this.code_direction = 1;
       }
-      if(this.line_equal_jump.includes(this.current_line)){
+    }
+    switch(this.current_line){
+      case 7:{
         this.code_direction = 3;
+        break;
+      }
+      case 10:{
+        this.code_direction = 2;
+        break;
+      }
+      case 13:{
+        this.code_direction = 1;
+        break;
       }
     }
+    /* if(this.line_equal_jump.includes(this.current_line)){
+      this.code_direction = 3;
+    } */
   }
   change_explain = () => {
     this.text_explain = this.explain[this.current_line - 1][0];
@@ -145,7 +155,7 @@ End Sub
     this.current_line += 1;
     console.log(this.current_line);
     this.add_top();
-    this.change_explain()
+    this.change_explain();
     if (this.current_line >= this.max_line) {
       Swal.fire('Código finalizado');
       this.location.back();
