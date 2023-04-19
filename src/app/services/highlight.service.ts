@@ -20,7 +20,7 @@ export class HighlightService {
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
 
-  highlightAll() {
+  highlightAll(): void {
     if (isPlatformBrowser(this.platformId)) {
       Prism.highlightAll();
     }
