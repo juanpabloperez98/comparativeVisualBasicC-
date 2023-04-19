@@ -58,6 +58,34 @@ End Module
   End Sub
 End Module
   `
+
+  CODECSHARP3 = ` namespace Operadores
+  {
+      class Program
+      {
+          static void Main(string[] args)
+          {
+              int num1=4,num2=3;
+              Console.WriteLine(num1 > num2);
+          }
+      }
+  }
+  `
+  CODECVB3 = ` Module Program
+  Sub Main()
+      Dim num1 As Integer
+      Dim num2 As Integer
+      num1 = 4
+      num2 = 3
+      MsgBox (num1 > num2)
+  End Sub
+End Module
+  `
+
+  examplesCard = [
+    
+  ]
+
   @ViewChild('contenCode1') contenCode1: any;
 
   constructor(
