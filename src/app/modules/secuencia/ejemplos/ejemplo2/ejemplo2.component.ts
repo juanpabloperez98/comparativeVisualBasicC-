@@ -57,16 +57,44 @@ End Sub
       "",
     ],
     [
-      "Luego se declara una variable con el nombre MSJ de tipo String, tanto para el código de C# Como el de Visual Basic",
+      "Se declaran las variables num1,num2,num3 de tipo int para el código de C#, para el código de Visual Basic Se declara la variable num1 interger (también conocido como int)",
       ""
     ],
     [
-      "La variable MSJ se iguala al mensaje correspondiente, en este caso “Hola mundo, este es mi primer programa”",
-      "MSJ = 'Hola mundo, este es mi primer programa'",
+      "Se declara la variable num2 de tipo int en el código de Visual Basic",
+      ""
     ],
     [
-      "Se imprime por pantalla la variable MSJ",
-      "MSJ = 'Hola mundo, este es mi primer programa'",
+      "Se declara la variable num3 de tipo int en el código de Visual Basic",
+      ""
+    ],
+    [
+      "Se le asigna el número 4 como valor a la variable num1 tanto en el código de Visual Basic como el de C#",
+      "num1 = 4"
+    ],
+    [
+      "Se le asigna el número 3 como valor a la variable num2 tanto en el código de Visual Basic como el de C#",
+      "num2 = 3"
+    ],
+    [
+      "Se le asigna el número 5 como valor a la variable num3 tanto en el código de Visual Basic como el de C#",
+      "num3 = 5"
+    ],
+    [
+      "Se imprime por consola los números declarados anteriormente, para el código de C# podemos imprimir en una sola línea, en el código de Visual Basic se imprime variable por variable, en este caso la variable num2",
+      ""
+    ],
+    [
+      "Se imprime por consola la variable num1 en el código de Visual Basic",
+      ""
+    ],
+    [
+      "Se imprime por consola la variable num3 en el código de Visual Basic",
+      ""
+    ],
+    [
+      "Se termina el código de Visual Basic",
+      ""
     ],
     [
       "Se cierra el método en el código de C#",
@@ -79,7 +107,7 @@ End Sub
     [
       "Fin del programa",
       ""
-    ]
+    ],
   ]
 
   text_explain = this.explain[this.current_line - 1][0];
