@@ -17,6 +17,15 @@ export const AppRoutes: Routes = [
     ]
   },
   {
+    path: 'estructuras_seleccion',
+    children:[
+      {
+        path:'',
+        loadChildren: () => import('./modules/seleccion/seleccion.module').then( m => m.SeleccionModule)
+      }
+    ]
+  },
+  {
     path: '**',
     redirectTo: ''
   }

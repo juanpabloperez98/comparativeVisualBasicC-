@@ -1,0 +1,28 @@
+.content-display{
+    animation-duration: 1s;
+    animation-name: left-right;
+}
+
+@keyframes left-right {
+    from {
+      margin-left: -100%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+a{
+  color: black;
+  cursor: pointer;
+  img{
+    transition: width 2;
+  }
+}
+a:hover > img{
+  width: 280px;
+}
+
+img{
+  width: 300px;
+}
