@@ -4,6 +4,7 @@ import { TheorySecuenciaComponent } from "./theory-secuencia/theory-secuencia.co
 import { Ejemplo1Component } from "./ejemplos/ejemplo1/ejemplo1.component";
 import { Ejemplo2Component } from "./ejemplos/ejemplo2/ejemplo2.component";
 import { OperadoresTheoryComponent } from "./operadores-theory/operadores-theory.component";
+import { Ejemplo1OperadoresComponent } from "./ejemplosOperadores/ejemplo1/ejemplo1/ejemplo1.component";
 
 
 export const secuenciaRoutes: Routes = [
@@ -29,7 +30,11 @@ export const secuenciaRoutes: Routes = [
       {
         path:'tipos-datos/ejemplo2',
         component:Ejemplo2Component,
-      }
+      },
+      {
+        path:'operadores/ejemplo1',
+        component:Ejemplo1OperadoresComponent,
+      },
     ]
   },
 ]

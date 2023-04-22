@@ -11,6 +11,7 @@ import { HighlightService } from 'src/app/services/highlight.service';
 export class OperadoresTheoryComponent implements OnInit {
 
   OPERADORESIMG = `../${environment.ASSETS_ICONS_PATH}/home/secuencia/operadores.png`
+  GO_EJ1 = '/estructuras_secuencia/operadores/ejemplo1'
 
   CODECSHARP1 = ` namespace Operadores
   {
@@ -83,7 +84,7 @@ End Module
   `
 
   examplesCard = [
-    
+
   ]
 
   @ViewChild('contenCode1') contenCode1: any;
