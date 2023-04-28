@@ -1,5 +1,7 @@
 import { Routes } from "@angular/router";
 import { MainComponent } from "./main/main.component";
+import { SimplesydoblesComponent } from "./simplesydobles/simplesydobles.component";
+
 
 
 export const seleccionRoutes: Routes = [
@@ -9,6 +11,10 @@ export const seleccionRoutes: Routes = [
       {
         path:'intro',
         component:MainComponent,
+      },
+      {
+        path:'simples-dobles',
+        component:SimplesydoblesComponent,
       },
     ]
   },

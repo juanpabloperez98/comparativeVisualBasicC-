@@ -11,6 +11,8 @@ export class MainComponent implements OnInit {
   SIMPLESIMG = `../${environment.ASSETS_ICONS_PATH}/home/seleccion/simples.png`
   MULTIPLES = `../${environment.ASSETS_ICONS_PATH}/home/seleccion/multiples_index.png`
 
+  PATH_SIMPLESDOBLES = '/estructuras_seleccion/simples-dobles'
+
   constructor() { }
 
   ngOnInit(): void {

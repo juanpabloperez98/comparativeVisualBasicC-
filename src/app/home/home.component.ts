@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
       'name':'Estructuras de selección',
       'context':'Amplia tus conocimientos sobre condicionales y lógica booleana, también acerca del if simple y el if anidado, y no te quedes sin saber sobre condicionales de múltiple selección, como el switch.',
       'img':'../../assets/home/seleccion.png',
-      'routerlink':'/estructuras_secuencia/intro'
+      'routerlink':'/estructuras_seleccion/intro'
     },
     {
       'name':'Estructuras repetitivas',
@@ -32,10 +32,10 @@ export class HomeComponent implements OnInit {
       'routerlink':'/estructuras_secuencia/intro'
     },
   ]
-  
+
   logo_cv =  `../${environment.ASSETS_ICONS_PATH}home/VCB_logo.png`;
 
-  ngOnInit(): void { 
-    console.log(this.logo_cv); 
+  ngOnInit(): void {
+    console.log(this.logo_cv);
   }
 }
