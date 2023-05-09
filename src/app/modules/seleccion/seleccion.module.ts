@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { seleccionRoutes } from './seleccion.routing';
 import { SimplesydoblesComponent } from './simplesydobles/simplesydobles.component';
 import { MultiplesComponent } from './multiples/multiples.component';
+import { Ejemplo1Component } from './ejemplosSimples/ejemplo1/ejemplo1.component';
 
 
 
@@ -12,7 +13,8 @@ import { MultiplesComponent } from './multiples/multiples.component';
   declarations: [
     MainComponent,
     SimplesydoblesComponent,
-    MultiplesComponent
+    MultiplesComponent,
+    Ejemplo1Component
   ],
   imports: [
     CommonModule,

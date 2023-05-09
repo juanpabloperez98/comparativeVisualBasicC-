@@ -1,0 +1,55 @@
+<section class="initial-section maxwidth mx-auto">
+  <div class="row mx-auto">
+    <div class="col-4">
+      <h3 class="mb-3">Código en C#</h3>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-cs">
+          namespace Ejemplo2&#123;
+              class Program&#123;
+                  static void Main(string[] args)&#123;
+                      int num1;
+                      Console.WriteLine("Ingresa numero:");
+                      num1 =  Int32.Parse(Console.ReadLine());
+                      Console.WriteLine("&#123;0&#125;",(num1%2 == 0));
+                  &#125;
+              &#125;
+          &#125;
+        </code>
+        <span class="line_paint" [style.top]="top_style1"> </span>
+      </pre>
+    </div>
+    <div class="col-4">
+      <h3 class="mb-3">Código en VisualBasic</h3>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-vb">{{ CODECVB }}</code>
+        <span class="line_paint" [style.top]="top_style2"> </span>
+      </pre>
+    </div>
+    <div class="col-4">
+      <div class="row mx-auto">
+        <div class="col-12">
+          <h5>Variables</h5>
+          <p class="pcontainerexplain">
+            {{ variable_line }}
+          </p>
+          <!-- [ngClass]="{'desactivate': !inputShow}" -->
+          <!-- [ngClass]="{'desactivate': !inputShow}" -->
+          <h5 [ngClass]="{'desactivate': !inputShow}" >Datos</h5>
+          <p [ngClass]="{'desactivate': !inputShow}" class="pcontainerexplain">
+            <input type="text" placeholder="Ingresa numero">
+          </p>
+          <h5>Explicación</h5>
+          <p class="pcontainerexplain">
+            {{ text_explain }}
+          </p>
+        </div>
+        <div class="col-12 text-center">
+          <a class="show-example-purple" (click)="next()">Siguiente</a>
+          <!-- <a class="arrow_tag" (click)="next()">
+            <i class="arrow right"></i>
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

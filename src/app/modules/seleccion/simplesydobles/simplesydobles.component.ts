@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HighlightService } from 'src/app/services/highlight.service';
+import { environment } from 'src/environments/environment';
 
 
 @Component({
@@ -8,6 +9,8 @@ import { HighlightService } from 'src/app/services/highlight.service';
   styleUrls: ['./simplesydobles.component.scss']
 })
 export class SimplesydoblesComponent implements OnInit {
+
+  SIMPLESYDOBLEIMG = `../${environment.ASSETS_ICONS_PATH}/home/seleccion/simples.png`
 
   CODECSHARP1 = ` namespace Identificadores
   {
@@ -52,9 +55,44 @@ End Module
 End Module
   `
 
-  constructor() { }
+  // ejemplo 3
+  CODECSHARP3 = ` namespace Sintaxis
+  {
+      class Program
+      {
+          static void Main(string[] args)
+          {
+              if condicion {
+                  Bloque codigo
+              }else{
+                  Bloque codigo
+              }
+          }
+      }
+  }
+  `
+  CODECVB3 = ` Module Program
+  Sub Main()
+      If condicion Then
+          Bloque codigo
+      Else
+          Bloque codigo
+      End If
+  End Sub
+End Module
+  `
+
+  GO_EJ1 = '/estructuras_seleccion/ejemplo1'
+
+  constructor(
+    private highlightService: HighlightService,
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  ngAfterViewChecked(): void {
+    this.highlightService.highlightAll();
   }
 
 }

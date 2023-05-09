@@ -7,6 +7,7 @@ import { TheorySecuenciaComponent } from './theory-secuencia/theory-secuencia.co
 import { Ejemplo1Component } from './ejemplos/ejemplo1/ejemplo1.component';
 import { Ejemplo2Component } from './ejemplos/ejemplo2/ejemplo2.component';
 import { OperadoresTheoryComponent } from './operadores-theory/operadores-theory.component';
+import { Ejemplo2OperadoresComponent } from './ejemplosOperadores/ejemplo2/ejemplo2.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { OperadoresTheoryComponent } from './operadores-theory/operadores-theory
     OperadoresTheoryComponent,
     Ejemplo1Component,
     Ejemplo2Component,
+    Ejemplo2OperadoresComponent,
   ],
   imports: [
     CommonModule,

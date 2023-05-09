@@ -1,0 +1,7 @@
+1 Se empieza definiendo el namespace para el código C# y se define el segmento de función en el lenguaje Visual Basic
+2 Se declara la clase en en el lenguaje C#
+3 Se define un metodo llamado Main que será tipo static
+4 Se declaran la variables num1 y num2 de tipo entero en el código de C#, en el código de Visual Basic se define la variable num1 de tipo entero
+5 Se declara la variable num2  de tipo entero
+6 Se pide al usuario que ingrese un número en el código de C#
+7 Se captura el número pedido anteriormente, notese que en el código de visual basic 

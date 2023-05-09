@@ -12,6 +12,7 @@ export class OperadoresTheoryComponent implements OnInit {
 
   OPERADORESIMG = `../${environment.ASSETS_ICONS_PATH}/home/secuencia/operadores.png`
   GO_EJ1 = '/estructuras_secuencia/operadores/ejemplo1'
+  GO_EJ2 = '/estructuras_secuencia/operadores/ejemplo2'
 
   CODECSHARP1 = ` namespace Operadores
   {

@@ -5,7 +5,7 @@
     </div>
     <div class="col-6 mx-auto content-img mt-5">
       <h3>Estructuras de selección simples</h3>
-      <img alt="tipos_datos.png">
+      <img [src]="SIMPLESYDOBLEIMG" class="img_estrcutura" alt="tipos_datos.png">
     </div>
     <div class="col-6 mx-auto mt-5">
       <h3>¿Que son las estructuras de selección simple?</h3>
@@ -78,6 +78,89 @@
           <pre class="language-language-markup line-numbers">
             <code class="language-vb">{{ CODECVB1 }}</code>
           </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-12">
+      <h3>Sentencia If Else</h3>
+      <p class="text-start">
+        Anteriormente se mencionaba acerca de la sentencia if, ahora adicional a esta sentencia aparece la sentencia
+        else, estas dos en conjunto conforman una estructura de control, que nos permiten tomar cierta decisión al
+        interior de nuestro algoritmo, es decir, nos permiten determinar qué acciones tomar dada o no cierta condición,
+        por ejemplo, determinar si la contraseña ingresada por el usuario es válida o no y de acuerdo a esto darle
+        acceso al sistema o mostrar un mensaje de error.
+        Un condicional if-else es una estructura que nos posibilita definir las acciones que se deben llevar a cabo si
+        se cumple cierta condición y también determinar las acciones que se deben ejecutar en caso de que no se cumpla
+      </p>
+    </div>
+  </div>
+</section>
+<section class="purple_color mt-5">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3 class="text-center">Sintaxis</h3>
+      <p>
+        La sintaxis a emplear con Visual Basic es muy similar a la que se estudia en los cursos de algoritmia y
+        pseudocódigo, con la sustitución del Si por If, del Entonces por Then. Como se muestra a continuación
+      </p>
+    </div>
+    <div class="col-6">
+      <pre class="language-language-markup line-numbers">
+        <code class="language-cs">{{ CODECSHARP3 }}
+        </code>
+      </pre>
+    </div>
+    <div class="col-6">
+      <pre class="language-language-markup line-numbers">
+        <code class="language-vb">{{ CODECVB3 }}</code>
+      </pre>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-12">
+      <h3>Vamos a los ejemplos</h3>
+      <p class="text-start mt-3 w-75 mx-auto">
+        A continuación, se presentan una serie de ejemplos con los cuales se busca afianzar un poco más el conocimiento
+        adquirido en esta sección, cada ejemplo cuenta con una forma interactiva de poder llevarlos a cabo, en la
+        presentación de cada ejemplo se da una pequeña descripción de lo que se busca explicar.
+      </p>
+    </div>
+    <div class="col-3 mt-4 mx-auto">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 1</h5>
+          <p class="card-text">
+            Escriba un programa que pida dos números enteros y que calcule su división, escribiendo si la división es exacta o no
+          </p>
+          <a [routerLink]="GO_EJ1" class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-4 mx-auto">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 2</h5>
+          <p class="card-text">
+            Mejore el programa anterior haciendo que tenga en cuenta que no se puede dividir por cero
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-4 mx-auto">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 3</h5>
+          <p class="card-text">
+            Dado 3 enteros n1, n2, n3, se desea realizar un programa que con estos enteros determine cual es el mayor de los 3 números dados
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
         </div>
       </div>
     </div>
