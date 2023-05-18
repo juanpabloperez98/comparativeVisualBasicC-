@@ -12,6 +12,7 @@ export class MainComponent implements OnInit {
   MULTIPLES = `../${environment.ASSETS_ICONS_PATH}/home/seleccion/multiples_index.png`
 
   PATH_SIMPLESDOBLES = '/estructuras_seleccion/simples-dobles'
+  PATH_MULTIPLES = '/estructuras_seleccion/multiples'
 
   constructor() { }
 

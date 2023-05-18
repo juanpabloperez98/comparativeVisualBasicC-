@@ -1,1 +1,130 @@
-<p>multiples works!</p>
+<section class="initial-section maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-12 mt-5">
+      <h3>Estructuras de selección</h3>
+    </div>
+    <div class="col-6 mx-auto content-img mt-5">
+      <h3>Estructuras de selección multiples</h3>
+      <img [src]="SIMPLESYDOBLEIMG" class="img_estrcutura" alt="tipos_datos.png">
+    </div>
+    <div class="col-6 mx-auto mt-5">
+      <h3>¿Que son las estructuras de selección multiples?</h3>
+      <p class="text-start">
+        Las estructuras de selección múltiple permiten que el flujo del diagrama se bifurque por varias ramas en el
+        punto de la toma de decisión(es), en función del valor que tome el selector. En la mayoría de lenguajes a estas
+        estructuras son conocidos a través de la sentencia switch y son usadas cuando se necesita validar más de 2
+        posibilidades, por lo que se evalúa una expresión que puede tomar n valores diferentes y cada uno de estos
+        valores puede llevar a una acción diferente.
+    </div>
+  </div>
+</section>
+<section class="purple_color">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3>Sintaxis</h3>
+      <p>
+        En la mayoría de lenguajes de programación la sentencia switch es muy similar, y abarca básicamente la misma
+        lógica de implementación. La sintaxis entre VB y C# varía un poco principalmente en los corchetes, paréntesis y
+        la palabra reservada break que sirve para salir del bloque de instrucciones correspondiente. Cada sentencia
+        switch viene acompañada de las sentencias case, donde representan es el valor opcional de un posible valor de la
+        expresión. A continuación, se explica más a detalle la sintaxis en cada lenguaje.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-6">
+      <h3>Sintaxis VB</h3>
+      <p class="text-start">
+        La sintaxis de la instrucción select Case en VBA es muy sencilla, pero hay que saber cómo usarla para sacarle
+        verdadero partido. Como se explico anteriormente la sentencia switch viene acompañada de varios componentes como
+        se muestra a continuación:
+      </p>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-vb">{{ CODECVB2 }}</code>
+      </pre>
+    </div>
+    <div class="col-6">
+      <h3>Sintaxis C#</h3>
+      <p class="text-start">
+        En C# esta sentencia es muy similar a lo ya explicado antes, varia simplemente en las llaves y en la palabra
+        reservada break que esta maneja, el break no es mas que la palabra reservada que como indica su traducción,
+        rompe el proceso del bloque en el que esta, es necesario utilizar esta palabra reservada para que no se salte al
+        siguiente case. A continuación, se muestra un ejemplo de la sintaxis correspondiente:
+      </p>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-cs">{{ CODECSHARP2 }}
+        </code>
+      </pre>
+    </div>
+  </div>
+</section>
+<section class="purple_color">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3>Veamos un ejemplo</h3>
+      <p>
+        El siguiente ejemplo es un caso sencillo de cuando utilizar la sentencia switch. Las condiciones que se evalúan
+        tienen que ser iguales a la expresión inicial. En este ejemplo se quiere evaluar la variable Nombre. En función
+        del Nombre se asignará un valor de color de fondo u otro.
+      </p>
+    </div>
+    <div class="col-6">
+      <pre class="language-language-markup line-numbers">
+        <code class="language-vb">{{ CODECVB3 }}</code>
+      </pre>
+    </div>
+    <div class="col-6">
+      <pre class="language-language-markup line-numbers">
+        <code class="language-cs">{{ CODECSHARP3 }}
+        </code>
+      </pre>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-12">
+      <h3>Vamos a los ejemplos</h3>
+      <p class="text-start mt-3 w-75 mx-auto">
+        A continuación, se presentan una serie de ejemplos con los cuales se busca afianzar un poco más el conocimiento
+        adquirido en esta sección, cada ejemplo cuenta con una forma interactiva de poder llevarlos a cabo, en la
+        presentación de cada ejemplo se da una pequeña descripción de lo que se busca explicar.
+      </p>
+    </div>
+    <div class="col-3 mt-4 mx-auto">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 1</h5>
+          <p class="card-text">
+            Imprimir el mes del año correspondiente a un número digitado por el usuario
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-4 mx-auto">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 2</h5>
+          <p class="card-text">
+            Realizar un programa que le permita al usuario ingresar un entero de dos dígitos, y determinar si sus DOS dígitos son números primos
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 mt-4 mx-auto">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 3</h5>
+          <p class="card-text">
+            De acuerdo a un número escrito por el usuario, imprimir a que día de la semana pertenece.
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

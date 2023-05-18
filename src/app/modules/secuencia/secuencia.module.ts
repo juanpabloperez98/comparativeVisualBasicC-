@@ -7,8 +7,10 @@ import { TheorySecuenciaComponent } from './theory-secuencia/theory-secuencia.co
 import { Ejemplo1Component } from './ejemplos/ejemplo1/ejemplo1.component';
 import { Ejemplo2Component } from './ejemplos/ejemplo2/ejemplo2.component';
 import { OperadoresTheoryComponent } from './operadores-theory/operadores-theory.component';
+import { Ejemplo1OperadoresComponent } from './ejemplosOperadores/ejemplo1/ejemplo1/ejemplo1.component';
 import { Ejemplo2OperadoresComponent } from './ejemplosOperadores/ejemplo2/ejemplo2.component';
-
+import { Ejemplo3OperadoresComponent } from './ejemplosOperadores/ejemplo3/ejemplo3.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,14 @@ import { Ejemplo2OperadoresComponent } from './ejemplosOperadores/ejemplo2/ejemp
     OperadoresTheoryComponent,
     Ejemplo1Component,
     Ejemplo2Component,
+    Ejemplo1OperadoresComponent,
     Ejemplo2OperadoresComponent,
+    Ejemplo3OperadoresComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(secuenciaRoutes)
+    RouterModule.forChild(secuenciaRoutes),
+    FormsModule,
   ],
   exports:[
     MainComponent

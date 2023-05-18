@@ -21,6 +21,12 @@ export class Ejemplo1OperadoresComponent implements OnInit {
   top2 = 16;
   top_style1 = this.top1 + 'px';
   top_style2 = this.top2 + 'px';
+  valueField = "";
+  inputShow = false;
+
+  // Variables del programa
+  num1 = "";
+  num2 = "";
 
   lines_jump: number[] = [
     Direction.firstCode,
@@ -76,31 +82,31 @@ End Sub
       "",
     ],
     [
-      "Luego se declara una variable con el nombre MSJ de tipo String, tanto para el código de C# Como el de Visual Basic",
+      "Se define dos variables de tipo int num1 y num2 en el código de C#, en el código de visual basic solo de define la variable num1",
       ""
     ],
     [
-      "La variable MSJ se iguala al mensaje correspondiente, en este caso “Hola mundo, este es mi primer programa”",
-      "MSJ = 'Hola mundo, este es mi primer programa'",
-    ],
-    [
-      "Se imprime por pantalla la variable MSJ",
-      "MSJ = 'Hola mundo, este es mi primer programa'",
-    ],
-    [
-      "Se cierra el método en el código de C#",
+      "Se declara la variable num2 en el código de visual basic",
       ""
     ],
     [
-      "Se cierra la clase",
+      "Se le pide al usuario que ingrese num1",
       ""
     ],
     [
-      "Fin del programa",
+      "Se captura lo ingresado en pantalla por el usuario y se iguala a la variable num1",
       ""
     ],
     [
-      "Fin del programa",
+      "Se le pide al usuario que ingrese num2",
+      ""
+    ],
+    [
+      "Se captura lo ingresado en pantalla por el usuario y se iguala a la variable num2",
+      ""
+    ],
+    [
+      "Por ultimo se imprime la multiplicación entre los dos números ingresados por el usuario anteriormente",
       ""
     ],
     [
@@ -147,6 +153,32 @@ End Sub
     this.top_style2 = this.top2 + 'px';
   }
 
+  add_variable = () => {
+    if(this.current_line == 10){
+      this.variable_line = `num1 = ${this.num1}, num2 = ${this.num2}`;
+      return
+    }
+    this.variable_line = "";
+  }
+
+  less_top_code1 = () => {
+    this.top1 -= 24
+    this.top_style1 = this.top1 + 'px';
+  }
+
+  less_top_code2 = () => {
+    this.top2 -= 24
+    this.top_style2 = this.top2 + 'px';
+  }
+
+  showInput = () => {
+    if(this.current_line == 7 || this.current_line == 9){
+      this.inputShow = true;
+    }else{
+      this.inputShow = false;
+    }
+  }
+
   change_line = () => {
     const state = this.lines_jump[this.current_line-1];
     switch(state){
@@ -164,20 +196,72 @@ End Sub
       }
     }
   }
+
   change_explain = () => {
     this.text_explain = this.explain[this.current_line-1][0];
     this.variable_line = this.explain[this.current_line-1][1];
   }
+
+  validate_next = () => {
+    switch(this.current_line){
+      case 8:{
+        if(this.valueField == ""){
+          Swal.fire('Ingrese un valor','Debe ingresar un valor para continuar','error');
+          this.back_code();
+        }
+        this.num1 = this.valueField;
+        this.valueField = "";
+        break;
+      }
+      case 10:{
+        if(this.valueField == ""){
+          Swal.fire('Ingrese un valor','Debe ingresar un valor para continuar','error');
+          this.back_code();
+        }
+        this.num2 = this.valueField;
+        this.valueField = "";
+        break;
+      }
+    }
+  }
+
+  back_code = () => {
+    this.current_line --;
+    const state = this.lines_jump[this.current_line-1];
+    console.log("state",state);
+    switch(state){
+      case Direction.firstCode:{
+        this.less_top_code1()
+        break;
+      }
+      case Direction.secondCode:{
+        this.less_top_code2()
+        break;
+      }
+      case Direction.thirdCode:{
+        if(this.current_line == 7){
+          this.less_top_code1();
+        }else{
+          this.less_top_code1();
+          this.less_top_code2();
+        }
+      }
+    }
+    this.change_explain();
+    this.showInput();
+  }
+
   next = () => {
     if (this.current_line >= this.max_line) {
       return;
     }
     this.current_line += 1;
     this.change_line();
-    this.change_explain()
+    this.change_explain();
+    this.showInput();
+    this.validate_next();
+    this.add_variable();
     console.log(this.current_line);
-    console.log(this.max_line);
-    console.log("******************************");
     if (this.current_line >= this.max_line) {
       Swal.fire('Código finalizado');
       this.location.back();

@@ -10,7 +10,7 @@
                     int num1,num2;
                     Console.WriteLine("Escriba num1:");
                     num1 =  Int32.Parse(Console.ReadLine());
-                    Console.WriteLine("Escriba num1:");
+                    Console.WriteLine("Escriba num2:");
                     num2 =  Int32.Parse(Console.ReadLine());
                     Console.WriteLine("La multiplicación es: &#123;0&#125;",(num1*num2));
                 &#125;
@@ -34,9 +34,15 @@
           <p class="pcontainerexplain">
             {{ variable_line }}
           </p>
+          <!-- [ngClass]="{'desactivate': !inputShow}" -->
+          <!-- [ngClass]="{'desactivate': !inputShow}" -->
           <h5>Explicación</h5>
           <p class="pcontainerexplain">
             {{ text_explain }}
+          </p>
+          <h5 [ngClass]="{'desactivate': !inputShow}" >Datos</h5>
+          <p [ngClass]="{'desactivate': !inputShow}" class="pcontainerexplain">
+            <input type="text" placeholder="Ingresa numero" [(ngModel)]="valueField">
           </p>
         </div>
         <div class="col-12 text-center">
