@@ -4,6 +4,7 @@ import { SimplesydoblesComponent } from "./simplesydobles/simplesydobles.compone
 import { Ejemplo1Component } from "./ejemplosSimples/ejemplo1/ejemplo1.component";
 import { MultiplesComponent } from "./multiples/multiples.component";
 import { Ejemplo2Component } from "./ejemplosSimples/ejemplo2/ejemplo2.component";
+import { Ejemplo3Component } from "./ejemplosSimples/ejemplo3/ejemplo3.component";
 
 
 
@@ -30,6 +31,10 @@ export const seleccionRoutes: Routes = [
       {
         path:'simples-dobles/ejemplo2',
         component:Ejemplo2Component,
+      },
+      {
+        path:'simples-dobles/ejemplo3',
+        component:Ejemplo3Component,
       },
     ]
   },

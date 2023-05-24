@@ -6,14 +6,14 @@ import Swal from 'sweetalert2';
 import { Direction } from 'src/app/modules/secuencia/utils/direction.enum';
 
 @Component({
-  selector: 'app-ejemplo2',
-  templateUrl: './ejemplo2.component.html',
-  styleUrls: ['./ejemplo2.component.scss']
+  selector: 'app-ejemplo3',
+  templateUrl: './ejemplo3.component.html',
+  styleUrls: ['./ejemplo3.component.scss']
 })
-export class Ejemplo2Component implements OnInit {
+export class Ejemplo3Component implements OnInit {
 
   current_line = 1;
-  max_line = 15;
+  max_line = 25;
   top1 = 16;
   top2 = 16;
   top_style1 = this.top1 + 'px';
@@ -31,24 +31,30 @@ export class Ejemplo2Component implements OnInit {
     Direction.firstCode,
     Direction.thirdCode,
     Direction.secondCode,
+    Direction.secondCode,
+    Direction.secondCode,
     Direction.firstCode,
     Direction.thirdCode,
     Direction.firstCode,
     Direction.thirdCode,
-    Direction.thirdCode,
     Direction.firstCode,
     Direction.thirdCode,
     Direction.firstCode,
-    Direction.firstCode,
-    Direction.firstCode,
+    Direction.thirdCode,
   ]
 
-  CODECVB = ` Sub Ejemplo2()
+  CODECVB = ` Sub Ejemplo3()
   Dim num1 As Integer
   Dim num2 As Integer
+  Dim num3 As Integer
+  Dim num_mayor As Integer
   num1 = InputBox("Ingrese numero 1: ")
   num2 = InputBox("Ingrese numero 2: ")
-  If num1 Mod num2 = 0 Then MsgBox ("La division es exacta")
+  num3 = InputBox("Ingrese numero 3: ")
+  num_mayor = num1
+  If num_mayor < num2 Then num_mayor = num2
+  If num_mayor < num3 Then num_mayor = num3
+  MsgBox ("El numero mayor es " & num_mayor)
 End Sub
   `
 
@@ -66,51 +72,115 @@ End Sub
       "",
     ],
     [
-      "Se define dos variables llamadas num1 y num2 en el código de C#, en el código de visual basic se declara la variable num1",
+      "Se definen 4 variables en el código de C# y se define la variable num1 como entero en el código de visual basic",
       "",
     ],
     [
-      "Se declara la variable num2 en el código de visual basic",
+      "Se definen 4 variables en el código de C# y se define la variable num1 como entero en el código de visual basic",
       "",
     ],
     [
-      "Se le pide al usuario que ingrese el valor de num1 en el código de C#",
+      "Se define la variable num2 en el código de visual basic",
       "",
     ],
     [
-      "Se captura el valor ingresado por el usuario y se iguala a la variable num1 (Esto en los 2 códigos)",
+      "Se define la variable num3 en el código de visual basic",
       "",
     ],
     [
-      "Se le pide al usuario que ingrese el valor de num2 en el código de C#",
+      "Se define la variable num_mayor de tipo entero en el código de visual basic",
       "",
     ],
     [
-      "Se captura el valor ingresado por el usuario y se iguala a la variable num2 (Esto en los 2 códigos)",
+      "",
       "",
     ],
     [
-      "Se valida que si el módulo entre el valor de las variables num1 y num2 es igual a cero y adicionalmente si el valor de la variable num2 es diferente",
+      "",
       "",
     ],
     [
-      "Si la validación anterior es correcta entonces, se imprime que la división fue exacta",
+      "",
       "",
     ],
     [
-      "Se cierra el condicional",
+      "",
       "",
     ],
     [
-      "Fin del programa",
+      "",
       "",
     ],
     [
-      "Fin del programa",
+      "",
       "",
     ],
     [
-      "Fin del programa",
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
+      "",
+    ],
+    [
+      "",
       "",
     ],
   ]

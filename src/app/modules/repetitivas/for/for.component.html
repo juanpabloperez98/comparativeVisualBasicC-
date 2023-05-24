@@ -1,0 +1,142 @@
+<section class="initial-section maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-12 mt-5">
+      <h3>Estructuras de selección</h3>
+    </div>
+    <div class="col-6 mx-auto content-img mt-5">
+      <h3>Estructura repetitiva FOR</h3>
+      <img [src]="FORPATH" class="img_estrcutura" alt="tipos_datos.png">
+    </div>
+    <div class="col-6 mx-auto mt-5">
+      <h3>¿Que son las Estructura repetitiva FOR?</h3>
+      <p class="text-start">
+        Esta estructura repetitiva es la más común y conocida de todas, está ejecuta las acciones que estén dentro del
+        cuerpo del bucle o ciclo, un número especifico de veces controlando de esa manera la ejecución paso a paso de
+        manera automática. Estas estructuras son declaradas como una variable contadora, la cual determina la cantidad
+        de veces o iteraciones que se ejecutan el bloque de sentencias mencionado anteriormente
+    </div>
+  </div>
+</section>
+<section class="purple_color">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3>Sintaxis</h3>
+      <p>
+        La estructura de la sentencia FOR es muy similar tanto para el lenguaje VB como para el lenguaje C#, sin
+        embargo, dicho su sintaxis varía un poco en la forma de como definir esta estructura en un lenguaje u otro, sin
+        embargo, el objetivo a cumplir es el mismo.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-6">
+      <h3>Sintaxis VB</h3>
+      <p class="text-start">
+        La sintaxis a emplear sobre esta estructura en el lenguaje visual basic consta de la palabra reservada FOR
+        acompañada de una variable (definida por el usuario) e igualando dicha variable a un valor numérico,
+        siguientemente definiendo otra variable la cual representara hasta que rango ejecutar la iteración
+      </p>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-vb">{{ CODECVB1 }}</code>
+      </pre>
+    </div>
+    <div class="col-6">
+      <h3>Sintaxis C#</h3>
+      <p class="text-start">
+        La sintaxis de esta estructura en el lenguaje C# cambia un poco con respecto a la de VB, esta también empieza
+        con la palabra reservada FOR, acompañada de una variable inicializada en el valor en el que se desea empezar la
+        iteración y posteriormente definiendo hasta donde se quiere hacer la iteración, por ultimo se define el índice
+        de crecimiento, por lo general siempre es de uno por lo que se utiliza el operador ++ para ir aumentando la
+        variable
+      </p>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-cs">{{ CODECSHARP1 }}</code>
+      </pre>
+    </div>
+  </div>
+</section>
+<section class="purple_color mt-5">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3 class="text-center">Veamos un ejemplo</h3>
+      <p>
+        Supóngase que se debe realizar la tabla de multiplicar del número 3, de los valores desde el 1 hasta el 9, a
+        continuación, un ejemplo de cómo se haría
+      </p>
+      <a class="show-example-purple mt-5" [ngClass]="{desactivate: !buttonexample1}" (click)="activateCode(1)">Ver
+        ejemplo</a>
+      <div class="row mx-auto" [ngClass]="{desactivate: buttonexample1}">
+        <div class="col-6">
+          <h3 class="text-center">Ejemplo VB</h3>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-cs">{{ CODECSHARP2 }}
+            </code>
+          </pre>
+        </div>
+        <div class="col-6">
+          <h3 class="text-center">Ejemplo C#</h3>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-vb">{{ CODECVB2 }}</code>
+          </pre>
+        </div>
+        <div class="col-12">
+          <h4>Resultado</h4>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-vb">
+              3 6 9 12 15 18 21 24 27
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto mb-5">
+  <div class="row mx-auto text-center">
+    <div class="col-12">
+      <h3>Vamos a los ejemplos</h3>
+      <p class="text-start">
+        A continuación, se presentan una serie de ejemplos con los cuales se busca afianzar un poco más el conocimiento
+        adquirido en esta sección, cada ejemplo cuenta con una forma interactiva de poder llevarlos a cabo, en la
+        presentación de cada ejemplo se da una pequeña descripción de lo que se busca explicar.
+      </p>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 1</h5>
+          <p class="card-text">
+            Realizar un programa que muestre todos los enteros pares comprendidos desde 2 hasta 12. Se debe mostrar el
+            total de la suma de todos los números pares comprendidos
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 2</h5>
+          <p class="card-text">
+            Realizar un programa que calcule el producto de dos números enteros y positivos mediante sumas sucesivas
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 3</h5>
+          <p class="card-text">
+            Realizar la serie de fibonacci, la serie de Fibonacci es la sucesión de números: 0, 1, 1, 2, 3, 5, 8, 13,
+            21, 34, … Cada número se calcula sumando los dos anteriores a él.
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

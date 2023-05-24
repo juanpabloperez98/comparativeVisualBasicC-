@@ -26,6 +26,15 @@ export const AppRoutes: Routes = [
     ]
   },
   {
+    path: 'estructuras_repetitivas',
+    children:[
+      {
+        path:'',
+        loadChildren: () => import('./modules/repetitivas/repetitivas.module').then( m => m.RepetitivasModule)
+      }
+    ]
+  },
+  {
     path: '**',
     redirectTo: ''
   }

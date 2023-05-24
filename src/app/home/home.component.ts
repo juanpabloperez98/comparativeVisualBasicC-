@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
       'name':'Estructuras repetitivas',
       'context':'Aprende sobre las estructuras repetitivas las cuales permiten optimizar procesos y tareas de una manera recursiva y más rápida. Conocerás acerca de su sintaxis, funcionamiento y cuando implementarlas.',
       'img':'../../assets/home/repetitivas.png',
-      'routerlink':'/estructuras_secuencia/intro'
+      'routerlink':'/estructuras_repetitivas/intro'
     },
   ]
 
