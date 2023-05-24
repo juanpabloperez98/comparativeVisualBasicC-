@@ -6,6 +6,8 @@ import { seleccionRoutes } from './seleccion.routing';
 import { SimplesydoblesComponent } from './simplesydobles/simplesydobles.component';
 import { MultiplesComponent } from './multiples/multiples.component';
 import { Ejemplo1Component } from './ejemplosSimples/ejemplo1/ejemplo1.component';
+import { FormsModule } from '@angular/forms';
+import { Ejemplo2Component } from './ejemplosSimples/ejemplo2/ejemplo2.component';
 
 
 
@@ -14,11 +16,13 @@ import { Ejemplo1Component } from './ejemplosSimples/ejemplo1/ejemplo1.component
     MainComponent,
     SimplesydoblesComponent,
     MultiplesComponent,
-    Ejemplo1Component
+    Ejemplo1Component,
+    Ejemplo2Component
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(seleccionRoutes)
+    RouterModule.forChild(seleccionRoutes),
+    FormsModule,
   ]
 })
 export class SeleccionModule { }

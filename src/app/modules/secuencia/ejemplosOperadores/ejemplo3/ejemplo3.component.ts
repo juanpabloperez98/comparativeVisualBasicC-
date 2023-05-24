@@ -184,9 +184,6 @@ End Sub
     this.current_line += 1;
     this.change_line();
     this.change_explain()
-    console.log(this.current_line);
-    console.log(this.max_line);
-    console.log("******************************");
     if (this.current_line >= this.max_line) {
       Swal.fire('Código finalizado');
       this.location.back();

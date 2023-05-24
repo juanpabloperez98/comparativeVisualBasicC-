@@ -6,11 +6,11 @@ import Swal from 'sweetalert2';
 import { Direction } from 'src/app/modules/secuencia/utils/direction.enum';
 
 @Component({
-  selector: 'app-ejemplo1',
-  templateUrl: './ejemplo1.component.html',
-  styleUrls: ['./ejemplo1.component.scss']
+  selector: 'app-ejemplo2',
+  templateUrl: './ejemplo2.component.html',
+  styleUrls: ['./ejemplo2.component.scss']
 })
-export class Ejemplo1Component implements OnInit {
+export class Ejemplo2Component implements OnInit {
 
   current_line = 1;
   max_line = 15;
@@ -43,13 +43,13 @@ export class Ejemplo1Component implements OnInit {
     Direction.firstCode,
   ]
 
-  CODECVB = ` Sub Ejemplo1()
-    Dim num1 As Integer
-    Dim num2 As Integer
-    num1 = InputBox("Ingrese numero 1: ")
-    num2 = InputBox("Ingrese numero 2: ")
-    If num1 Mod num2 = 0 Then MsgBox ("La division es exacta")
-  End Sub
+  CODECVB = ` Sub Ejemplo2()
+  Dim num1 As Integer
+  Dim num2 As Integer
+  num1 = InputBox("Ingrese numero 1: ")
+  num2 = InputBox("Ingrese numero 2: ")
+  If num1 Mod num2 = 0 Then MsgBox ("La division es exacta")
+End Sub
   `
 
   explain = [

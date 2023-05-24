@@ -82,7 +82,7 @@ End Module
 End Module
   `
 
-  GO_EJ1 = '/estructuras_seleccion/ejemplo1'
+  GO_EJ1 = '/estructuras_seleccion/simples-dobles/ejemplo1'
 
   constructor(
     private highlightService: HighlightService,

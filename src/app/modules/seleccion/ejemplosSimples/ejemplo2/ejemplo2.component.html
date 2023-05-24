@@ -4,17 +4,17 @@
       <h3 class="mb-3">Código en C#</h3>
       <pre class="language-language-markup line-numbers">
         <code class="language-cs">
-          namespace Ejemplo1&#123;
+          namespace Ejemplo2&#123;
             class Program&#123;
                 static void Main(string[] args)&#123;
-                  int num1,num2;
-                  Console.WriteLine("Ingrese numero 1: ");
-                  num1 = Int32.Parse(Console.ReadLine());
-                  Console.WriteLine("Ingrese numero 2: ");
-                  num2 = Int32.Parse(Console.ReadLine());
-                  if(num1%num2 == 0)&#123;
-                    Console.WriteLine("La division es exacta");
-                  &#125;
+                    int num1,num2;
+                    Console.WriteLine("Ingrese numero 1: ");
+                    num1 = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Ingrese numero 2: ");
+                    num2 = Int32.Parse(Console.ReadLine());
+                    if(num2 != 0 && num1%num2 == 0)&#123;
+                        Console.WriteLine("La division es exacta");
+                    &#125;
                 &#125;
             &#125;
         &#125;
@@ -25,7 +25,7 @@
     <div class="col-4">
       <h3 class="mb-3">Código en VisualBasic</h3>
       <pre class="language-language-markup line-numbers">
-        <code class="language-vb">{{ CODECVB }}</code>
+        <code class="language-vb">&#123;&#123; CODECVB &#125;&#125;</code>
         <span class="line_paint" [style.top]="top_style2"> </span>
       </pre>
     </div>
@@ -34,16 +34,16 @@
         <div class="col-12">
           <h5>Variables</h5>
           <p class="pcontainerexplain">
-            {{ variable_line }}
+            &#123;&#123; variable_line &#125;&#125;
           </p>
-          <!-- [ngClass]="{'desactivate': !inputShow}" -->
-          <!-- [ngClass]="{'desactivate': !inputShow}" -->
+          <!-- [ngClass]="&#123;'desactivate': !inputShow&#125;" -->
+          <!-- [ngClass]="&#123;'desactivate': !inputShow&#125;" -->
           <h5>Explicación</h5>
           <p class="pcontainerexplain">
-            {{ text_explain }}
+            &#123;&#123; text_explain &#125;&#125;
           </p>
-          <h5 [ngClass]="{'desactivate': !inputShow}" >Datos</h5>
-          <p [ngClass]="{'desactivate': !inputShow}" class="pcontainerexplain">
+          <h5 [ngClass]="&#123;'desactivate': !inputShow&#125;" >Datos</h5>
+          <p [ngClass]="&#123;'desactivate': !inputShow&#125;" class="pcontainerexplain">
             <input type="text" placeholder="Ingresa numero" [(ngModel)]="valueField">
           </p>
         </div>
