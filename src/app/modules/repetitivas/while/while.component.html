@@ -1,1 +1,160 @@
-<p>while works!</p>
+<section class="initial-section maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-12 mt-5">
+      <h3>Estructuras Repetitivas</h3>
+    </div>
+    <div class="col-6 mx-auto content-img mt-5">
+      <h3>Estructura repetitiva WHILE</h3>
+      <img [src]="WHILEPATH" class="img_estrcutura" alt="tipos_datos.png">
+    </div>
+    <div class="col-6 mx-auto mt-5">
+      <h3>¿Que son las Estructura repetitiva WHILE?</h3>
+      <p class="text-start">
+        La estructura while repite un bloque de instrucciones mientras una condición dada se cumpla, es decir, sea
+        verdadera, ¿qué quiere decir esto? el ciclo while puede repetirse un sin fin de veces, lo que significa que no
+        es necesario definir el número de veces que se va a repetir el ciclo. En los ciclos while no hay necesidad de
+        tener un valor inicial ni un valor fina. Muy similar a las estructuras de selección, esta estructura repetitiva
+        depende de una condición la cual se evalúa antes de ejecutar el cuerpo de bucle, por lo que, si la condición no
+        se cumple, ninguna instrucción dentro de la estructura se ejecutará.
+    </div>
+  </div>
+</section>
+<section class="purple_color mt-5">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3 class="text-center">Sintaxis</h3>
+      <p>
+        La sintaxis de un ciclo while, es de hecho más simple que la de un ciclo for. Solo es necesario tener claro la
+        condición de finalización. Normalmente para todos los lenguajes de programación se maneja la misma estructura en
+        este ciclo, y no es la excepción para los lenguajes tanto como para VB como para C#
+      </p>
+      <div class="row mx-auto">
+        <div class="col-6">
+          <h3 class="text-center">Sintaxis VB</h3>
+          <p>
+            Esta sintaxis es definida por la palabra reservada While acompañada de una expresión booleana, es decir una
+            expresión que retorna verdadero o falso, dentro de esta estructura, se ejecuta un número indefinido de veces
+            las sentencias de bloques que se encuentre en ella.
+          </p>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-cs">{{ CODECSHARP1 }}
+            </code>
+          </pre>
+        </div>
+        <div class="col-6">
+          <h3 class="text-center">Sintaxis C#</h3>
+          <p>
+            La sintaxis para este lenguaje es similar a la de VB, viene acompañada de la palabra reservada while
+            acompañada entre paréntesis de una expresión booleana, la diferencia mas significativa son las llaves que se
+            deben utilizar para ejecutar el bloque de código que hayan dentro de ellas
+          </p>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-vb">{{ CODECVB1 }}</code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto">
+  <div class="row mx-auto text-left">
+    <div class="col-12">
+      <h3>Veamos un ejemplo</h3>
+      <p class="mb-5">
+        Se necesita pedir un número al usuario para que se pueda multiplicar por 3, dado el caso que el número ingresado
+        por el usuario sea menor a 10, se deberá volver a pedir el número al usuario hasta que ingrese un número mayor a
+        10
+      </p>
+      <a class="show-example-purple mb-5" [ngClass]="{desactivate: !buttonexample1}" (click)="activateCode(1)">Ver
+        ejemplo</a>
+      <div class="row mx-auto" [ngClass]="{desactivate: buttonexample1}">
+        <div class="col-6">
+          <h3 class="text-center">Ejemplo VB</h3>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-cs">{{ CODECSHARP2 }}
+            </code>
+          </pre>
+        </div>
+        <div class="col-6">
+          <h3 class="text-center">Ejemplo C#</h3>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-vb">{{ CODECVB2 }}</code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="purple_color mt-5">
+  <div class="row mx-auto maxwidth p-5 text-center">
+    <div class="col-12">
+      <h3>Vamos a los ejemplos</h3>
+      <p class="text-start">
+        A continuación, se presentan una serie de ejemplos con los cuales se busca afianzar un poco más el conocimiento
+        adquirido en esta sección, cada ejemplo cuenta con una forma interactiva de poder llevarlos a cabo, en la
+        presentación de cada ejemplo se da una pequeña descripción de lo que se busca explicar.
+      </p>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 1</h5>
+          <p class="card-text">
+            Leer números enteros por teclado, hasta que el usuario ingrese el 0. Finalmente, mostrar la sumatoria de
+            todos los números ingresados.
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 2</h5>
+          <p class="card-text">
+            Realizar un programa que le pida dos números al usuario. El programa pedirá de nuevo el segundo número
+            mientras no sea mayor que el primero. El programa terminará escribiendo los dos números
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 3</h5>
+          <p class="card-text">
+            Pedir al usuario un número y mostrar todos los números comprendidos entre el número ingresado hasta 1 de
+            manera descendente utilizando el ciclo while
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 4</h5>
+          <p class="card-text">
+            Realizar un programa que pida dos números enteros e imprima los números NO pares comprendidos entre el
+            número 1 ingresado y el número 2 (El número 1 debe ser menor al número 2 y la diferencia entre uno y el otro
+            no puede ser mayor a 10)
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 5</h5>
+          <p class="card-text">
+            Realizar un programa que le permita ingresar al usuario un número N, y poder mostrar la suma total de todos
+            los números contenidos entre 1 y N-1
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

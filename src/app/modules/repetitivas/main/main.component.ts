@@ -12,6 +12,7 @@ export class MainComponent implements OnInit {
   WHILEIMG = `../${environment.ASSETS_ICONS_PATH}/home/repetitivas/while.png`
 
   PATHFOR =  '/estructuras_repetitivas/for'
+  PATHWHILE =  '/estructuras_repetitivas/while'
 
   constructor() { }
 
