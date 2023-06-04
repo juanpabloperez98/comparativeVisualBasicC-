@@ -1,0 +1,150 @@
+<section class="initial-section maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-12 mt-5">
+      <h3>¿Que son las funciones?</h3>
+    </div>
+    <div class="col-6 mx-auto content-img mt-5">
+      <h3>Tipos de datos</h3>
+      <img [src]="FUNCIONIMG" alt="funciones.png">
+    </div>
+    <div class="col-6 mx-auto mt-5">
+      <h3>¿Que son las funciones?</h3>
+      <p class="text-start">
+        Las funciones son un elemento central en el desarrollo. Cada función representa una unidad de procesamiento
+        reutilizable que puede recibir uno o varios parámetros y devolver un valor. La escritura de funciones permite
+        estructurar el código desacoplando de manera lógica las funcionalidades desarrolladas. Se recomienda, para una
+        buena legibilidad y una buena mantenibilidad, limitar la longitud de las funciones.
+        <br>
+        Los objetivos de las funciones son:
+      </p>
+      <ul class="text-start">
+        <li>Automatizar tareas repetitivas.</li>
+        <li>Mejorar la seguridad, confiabilidad y estabilidad del programa.</li>
+        <li>Encapsular o modularizar código, es decir, separarlo en tareas.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="purple_color">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3>Aspectos Importantes</h3>
+      <p>
+        Los programas en C# como mínimo poseen una función, la función principal main(), esta función se llama desde el
+        sistema operativo y no desde otra función. Las funciones no se pueden anidar, es decir, no puede haber una
+        función dentro de otra. Se pueden tener o no argumentos para una función. En visual Basic una función es una
+        serie de instrucciones dos segmentos Function y End Function. El Function procedimiento realiza una tarea y, a
+        continuación, devuelve el control al código que realiza la llamada. Cuando devuelve el control, también devuelve
+        un valor al código que realiza la llamada. Cada vez que se llama al procedimiento, se ejecutan sus
+        instrucciones, empezando por la primera instrucción ejecutable después de la Function instrucción y finalizando
+        con la primera End Functioninstrucción
+      </p>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-12">
+      <h3>Sintaxis</h3>
+      <div class="row mx-auto">
+        <div class="col-6">
+          <p>
+            La sintaxis para declarar un <span style="font-weight: bold;">Function</span> procedimiento es la siguiente:
+          </p>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-cs">{{ CODECSHARP1 }}
+            </code>
+          </pre>
+        </div>
+        <div class="col-6">
+          <p>La sintaxis general para escribir una función en C# es la siguiente:</p>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-vb">{{ CODECVB1 }}</code>
+          </pre>
+        </div>
+        <div class="col-12 mt-2 text-start">
+          <p>
+            Los modificadores pueden especificar el nivel de acceso y la información sobre la sobrecarga, invalidación,
+            uso compartido y sombreado.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="purple_color">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3>Declaración de funciones</h3>
+      <p>
+        Para declarar una función es necesario definir el tipo de dato que va a retornar la función, ¿esto quiere
+        decir?, pues básicamente se tiene que especificar qué dato va a retornar la función que acabamos de crear.
+      </p>
+    </div>
+    <div class="col-6 mt-4">
+      <h3>Declaración de funciones en VB</h3>
+      <p>
+        Cada <span style="font-weight: bold;">Function</span> procedimiento tiene un tipo de datos, igual que todas las
+        variables. Esta cláusula especifica As
+        este tipo de datos en la <span style="font-weight: bold;">Function</span> instrucción y determina el tipo de
+        datos del valor que devuelve la función al
+        código que realiza la llamada. Las siguientes declaraciones de ejemplo ilustran esto.
+      </p>
+    </div>
+    <div class="col-6 mt-4">
+      <h3>Declaración de funciones en C#</h3>
+      <p>
+        Cuando declaramos una función o método, no esta todo hecho, nos falta llamar a esa función para acceder
+        utilizarla. Simplemente hay que poner el nombre de la función o método y poner entre paréntesis los parámetros
+        que requieran. IMPORTANTE: en la llamada no hay que declarar las variables como en la declaración de la función,
+        sino simplemente pasarles el valor.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto mb-5">
+  <div class="row mx-auto text-center">
+    <div class="col-12">
+      <h3>Vamos a los ejemplos</h3>
+      <p class="text-start">
+        A continuación, se presentan una serie de ejemplos con los cuales se busca afianzar un poco más el conocimiento
+        adquirido en esta sección, cada ejemplo cuenta con una forma interactiva de poder llevarlos a cabo, en la
+        presentación de cada ejemplo se da una pequeña descripción de lo que se busca explicar.
+      </p>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 1</h5>
+          <p class="card-text">
+            Realizar un programa que calcule el producto de dos números enteros y positivos mediante sumas sucesivas
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 2</h5>
+          <p class="card-text">
+            Realice un programa en C# el cual cree 3 variables de tipo int e imprima las variables de en orden
+            ascendente e.j 1,2,3
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 3</h5>
+          <p class="card-text">
+            Realizar un programa que calcule el producto de dos números enteros y positivos mediante sumas sucesivas
+          </p>
+          <a class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -9,6 +9,7 @@ import { Ejemplo1Component } from './ejemplosSimples/ejemplo1/ejemplo1.component
 import { FormsModule } from '@angular/forms';
 import { Ejemplo2Component } from './ejemplosSimples/ejemplo2/ejemplo2.component';
 import { Ejemplo3Component } from './ejemplosSimples/ejemplo3/ejemplo3.component';
+import { Ejemplo4Component } from './ejemplosSimples/ejemplo4/ejemplo4.component';
 
 
 
@@ -19,7 +20,8 @@ import { Ejemplo3Component } from './ejemplosSimples/ejemplo3/ejemplo3.component
     MultiplesComponent,
     Ejemplo1Component,
     Ejemplo2Component,
-    Ejemplo3Component
+    Ejemplo3Component,
+    Ejemplo4Component
   ],
   imports: [
     CommonModule,

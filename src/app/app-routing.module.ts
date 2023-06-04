@@ -35,6 +35,15 @@ export const AppRoutes: Routes = [
     ]
   },
   {
+    path: 'funcion',
+    children:[
+      {
+        path:'',
+        loadChildren: () => import('./modules/funcion/funcion.module').then( m => m.FuncionModule)
+      }
+    ]
+  },
+  {
     path: '**',
     redirectTo: ''
   }

@@ -84,6 +84,8 @@ End Module
 
   GO_EJ1 = '/estructuras_seleccion/simples-dobles/ejemplo1'
   GO_EJ2 = '/estructuras_seleccion/simples-dobles/ejemplo2'
+  GO_EJ3 = '/estructuras_seleccion/simples-dobles/ejemplo3'
+  GO_EJ4 = '/estructuras_seleccion/simples-dobles/ejemplo4'
 
   constructor(
     private highlightService: HighlightService,
