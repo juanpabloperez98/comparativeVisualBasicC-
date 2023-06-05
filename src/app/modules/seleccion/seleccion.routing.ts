@@ -6,6 +6,7 @@ import { MultiplesComponent } from "./multiples/multiples.component";
 import { Ejemplo2Component } from "./ejemplosSimples/ejemplo2/ejemplo2.component";
 import { Ejemplo3Component } from "./ejemplosSimples/ejemplo3/ejemplo3.component";
 import { Ejemplo4Component } from "./ejemplosSimples/ejemplo4/ejemplo4.component";
+import { Ejemplo5Component } from "./ejemplosSimples/ejemplo5/ejemplo5.component";
 
 
 
@@ -40,6 +41,10 @@ export const seleccionRoutes: Routes = [
       {
         path:'simples-dobles/ejemplo4',
         component:Ejemplo4Component,
+      },
+      {
+        path:'simples-dobles/ejemplo5',
+        component:Ejemplo5Component,
       },
     ]
   },

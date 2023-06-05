@@ -6,14 +6,14 @@ import Swal from 'sweetalert2';
 import { Direction } from 'src/app/modules/secuencia/utils/direction.enum';
 
 @Component({
-  selector: 'app-ejemplo4',
-  templateUrl: './ejemplo4.component.html',
-  styleUrls: ['./ejemplo4.component.scss']
+  selector: 'app-ejemplo5',
+  templateUrl: './ejemplo5.component.html',
+  styleUrls: ['./ejemplo5.component.scss']
 })
-export class Ejemplo4Component implements OnInit {
+export class Ejemplo5Component implements OnInit {
 
   current_line = 1;
-  max_line = 14;
+  max_line = 22;
   top1 = 16;
   top2 = 16;
   top_style1 = this.top1 + 'px';
@@ -22,7 +22,7 @@ export class Ejemplo4Component implements OnInit {
   valueField = "";
 
   //Program values
-  dinero:number = 0;
+  anio:number = 0;
 
   lines_jump: number[] = [
     Direction.firstCode,
@@ -37,17 +37,33 @@ export class Ejemplo4Component implements OnInit {
     Direction.thirdCode,
     Direction.thirdCode,
     Direction.thirdCode,
+    Direction.thirdCode,
+    Direction.thirdCode,
+    Direction.thirdCode,
+    Direction.thirdCode,
+    Direction.thirdCode,
+    Direction.thirdCode,
+    Direction.thirdCode,
+    Direction.thirdCode,
     Direction.firstCode,
     Direction.firstCode,
   ]
 
-  CODECVB = ` Sub Ejemplo4()
-  Dim dinero As Integer
-  dinero = InputBox("Ingrese el dinero: ")
-  If dinero > 10 Then
-      MsgBox ("Se puede entregar el helado")
+  CODECVB = ` Sub Ejemplo5()
+  Dim anio As Integer
+  anio = InputBox("Ingresa el año: ")
+  If anio Mod 100 = 0 Then
+      If anio Mod 400 = 0 Then
+          MsgBox ("Es un año bisiesto")
+      Else
+          MsgBox ("No es un año bisisesto")
+      End If
   Else
-      MsgBox ("Dinero no suficiente")
+      If anio Mod 4 = 0 Or anio Mod 400 = 0 Then
+          MsgBox ("Es un año bisiesto")
+      Else
+          MsgBox ("No es un año bisisesto")
+      End If
   End If
 End Sub
   `
@@ -66,23 +82,27 @@ End Sub
       "",
     ],
     [
-      "Se define la variable dinero como en los dos lenguajes de programación",
+      "Se define la variable anio de tipo entero",
       "",
     ],
     [
-      "Se le pide al usuario que ingrese el valor del dinero",
+      "Se le pide al usuario que ingrese el valor de anio en el código de C#",
       "",
     ],
     [
-      "Se captura el dato ingresado por el usuario y se guarda en la variable dinero",
+      "Se captura el valor ingresado por el usuario en la variable anio",
       "",
     ],
     [
-      "Se valida si el valor de la variable dinero es mayor a 10",
+      "Se valida si la operación del módulo de anio entre 100 es igual a cero",
       "",
     ],
     [
-      "Se imprime que se puede entregar el helado",
+      "Como la condición anterior se cumple, ahora se valida si la operación modulo entre anio y 400 da igual a cero",
+      "",
+    ],
+    [
+      "Como la condición se cumple entonces se imprime que el año es biciesto",
       "",
     ],
     [
@@ -90,7 +110,35 @@ End Sub
       "",
     ],
     [
-      "Se imprime que el dinero no es suficiente",
+      "Se imprime que el año no es biciesto",
+      "",
+    ],
+    [
+      "Se cierra el condicional",
+      "",
+    ],
+    [
+      "Como la condición no se cumplio entonces",
+      "",
+    ],
+    [
+      "Se valida entonces si la operación modulo entre anio y 4 es igual a cero o si la operación modulo entre anio y 400 es igual a cero",
+      "",
+    ],
+    [
+      "Como la condición se cumplio entonces se imprime que es un año bisiciesto",
+      "",
+    ],
+    [
+      "Como la condición no se cmplio entonces",
+      "",
+    ],
+    [
+      "Se imprime que el año no es biciesto",
+      "",
+    ],
+    [
+      "Se cierra el condicional",
       "",
     ],
     [
@@ -107,6 +155,10 @@ End Sub
     ],
     [
       "Fin del programa",
+      "",
+    ],
+    [
+      "",
       "",
     ],
   ]
@@ -138,8 +190,8 @@ End Sub
   }
 
   add_variable = () => {
-    if(this.current_line == 7){
-      this.variable_line = `dinero = ${this.dinero}`
+    if(this.current_line == 7 || this.current_line == 8 || this.current_line == 14){
+      this.variable_line = `anio = ${this.anio}`
       return
     }
   }
@@ -196,7 +248,7 @@ End Sub
           Swal.fire('Ingrese un numero valido','Debe ingresar un numero valido para continuar','error');
           this.back_code();
         }
-        this.dinero = parseInt(this.valueField);
+        this.anio = parseInt(this.valueField);
         this.valueField = "";
         break;
       }
@@ -232,20 +284,55 @@ End Sub
 
     switch(this.current_line){
       case 8:{
-        if(this.dinero < 10){
+        if(this.anio % 100 != 0){
+          for (let i = 0; i < 5; i++) {
+            this.current_line += 1;
+            this.change_line();
+            this.change_explain();
+          }
+        }
+        break;
+      }
+      case 9:{
+        if(this.anio % 400 != 0){
+          this.current_line += 1;
+          this.change_line();
+          this.change_explain();
+        }
+        break
+      }
+      case 10:{
+        for (let i = 0; i < 10; i++) {
+          this.current_line += 1;
+          this.change_line();
+          this.change_explain();
+        }
+        break
+      }
+      case 13:{
+        for (let i = 0; i < 7; i++) {
           this.current_line += 1;
           this.change_line();
           this.change_explain();
         }
         break;
       }
-      case 9:{
+      case 15:{
+        if(this.anio%4 == 0 || this.anio%400 == 0){
+
+        }else{
           this.current_line += 1;
           this.change_line();
           this.change_explain();
+        }
+        break;
+      }
+      case 16:{
+        for (let i = 0; i < 4; i++) {
           this.current_line += 1;
           this.change_line();
           this.change_explain();
+        }
         break;
       }
     }
