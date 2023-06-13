@@ -7,6 +7,10 @@ import { Ejemplo2Component } from "./ejemplosSimples/ejemplo2/ejemplo2.component
 import { Ejemplo3Component } from "./ejemplosSimples/ejemplo3/ejemplo3.component";
 import { Ejemplo4Component } from "./ejemplosSimples/ejemplo4/ejemplo4.component";
 import { Ejemplo5Component } from "./ejemplosSimples/ejemplo5/ejemplo5.component";
+import { EjemploMultiples1Component } from "./ejemplosMultiples/ejemplo-multiples1/ejemplo-multiples1.component";
+import { EjemploMultiples2Component } from "./ejemplosMultiples/ejemplo-multiples2/ejemplo-multiples2.component";
+import { EjemploMultiples3Component } from "./ejemplosMultiples/ejemplo-multiples3/ejemplo-multiples3.component";
+import { EjemploMultiples4Component } from "./ejemplosMultiples/ejemplo-multiples4/ejemplo-multiples4.component";
 
 
 
@@ -45,6 +49,22 @@ export const seleccionRoutes: Routes = [
       {
         path:'simples-dobles/ejemplo5',
         component:Ejemplo5Component,
+      },
+      {
+        path:'multiples/ejemplo1',
+        component:EjemploMultiples1Component,
+      },
+      {
+        path:'multiples/ejemplo2',
+        component:EjemploMultiples2Component,
+      },
+      {
+        path:'multiples/ejemplo3',
+        component:EjemploMultiples3Component,
+      },
+      {
+        path:'multiples/ejemplo4',
+        component:EjemploMultiples4Component,
       },
     ]
   },

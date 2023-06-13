@@ -1,0 +1,108 @@
+<section class="initial-section maxwidth mx-auto">
+  <div class="row mx-auto">
+    <div class="col-4">
+      <h3 class="mb-3">Código en C#</h3>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-cs">
+          namespace Ejemplo1&#123;
+            class Program&#123;
+                static void Main(string[] args)&#123;
+                    int mes;
+                    Console.WriteLine(",Ingrese un número: ");
+                    mes = Int32.Parse(Console.ReadLine());
+                    switch(mes)&#123;
+                        case 1:&#123;
+                            Console.WriteLine("Mes: Enero");
+                            break;
+                        &#125;
+                        case 2:&#123;
+                            Console.WriteLine("Mes: Febrero");
+                            break;
+                        &#125;
+                        case 3:&#123;
+                            Console.WriteLine("Mes: Marzo");
+                            break;
+                        &#125;
+                        case 4:&#123;
+                            Console.WriteLine("Mes: Abril");
+                            break;
+                        &#125;
+                        case 5:&#123;
+                            Console.WriteLine("Mes: Mayo");
+                            break;
+                        &#125;
+                        case 6:&#123;
+                            Console.WriteLine("Mes: Junio");
+                            break;
+                        &#125;
+                        case 7:&#123;
+                            Console.WriteLine("Mes: Julio");
+                            break;
+                        &#125;
+                        case 8:&#123;
+                            Console.WriteLine("Mes: Agosto");
+                            break;
+                        &#125;
+                        case 9:&#123;
+                            Console.WriteLine("Mes: Septiembre");
+                            break;
+                        &#125;
+                        case 10:&#123;
+                            Console.WriteLine("Mes: Octubre");
+                            break;
+                        &#125;
+                        case 11:&#123;
+                            Console.WriteLine("Mes: Noviembre");
+                            break;
+                        &#125;
+                        case 12:&#123;
+                            Console.WriteLine("Mes: Diciembre");
+                            break;
+                        &#125;
+                        default:&#123;
+                            Console.WriteLine("Mes no valido");
+                            break;
+                        &#125;
+                    &#125;
+                &#125;
+            &#125;
+        &#125;
+        </code>
+        <span class="line_paint" [style.top]="top_style1"> </span>
+      </pre>
+    </div>
+    <div class="col-4">
+      <h3 class="mb-3">Código en VisualBasic</h3>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-vb">&#123;&#123; CODECVB &#125;&#125;</code>
+        <span class="line_paint" [style.top]="top_style2"> </span>
+      </pre>
+    </div>
+    <div class="col-4">
+      <div class="row mx-auto">
+        <div class="col-12">
+          <h5>Variables</h5>
+          <p class="pcontainerexplain">
+            &#123;&#123; variable_line &#125;&#125;
+          </p>
+          <!-- [ngClass]="&#123;'desactivate': !inputShow&#125;" -->
+          <!-- [ngClass]="&#123;'desactivate': !inputShow&#125;" -->
+          <h5>Explicación</h5>
+          <p class="pcontainerexplain">
+            &#123;&#123; text_explain &#125;&#125;
+          </p>
+          <h5 [ngClass]="&#123;'desactivate': !inputShow&#125;" >Datos</h5>
+          <p [ngClass]="&#123;'desactivate': !inputShow&#125;" class="pcontainerexplain">
+            <input type="text" placeholder="Ingresa numero" [(ngModel)]="valueField">
+          </p>
+        </div>
+        <div class="col-12 text-center">
+          <a class="show-example-purple" (click)="next()">Siguiente</a>
+          <!-- <a class="arrow_tag" (click)="next()">
+            <i class="arrow right"></i>
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

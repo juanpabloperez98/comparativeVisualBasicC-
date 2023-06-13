@@ -109,7 +109,10 @@ End Module
 End Sub
   `
 
-  GO_EJ1 = '/estructuras_seleccion/ejemplo1'
+  GO_EJ1 = '/estructuras_seleccion/multiples/ejemplo1'
+  GO_EJ2 = '/estructuras_seleccion/multiples/ejemplo2'
+  GO_EJ3 = '/estructuras_seleccion/multiples/ejemplo3'
+  GO_EJ4 = '/estructuras_seleccion/multiples/ejemplo4'
 
   constructor(
     private highlightService: HighlightService,

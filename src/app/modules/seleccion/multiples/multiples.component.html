@@ -93,36 +93,47 @@
         presentación de cada ejemplo se da una pequeña descripción de lo que se busca explicar.
       </p>
     </div>
-    <div class="col-3 mt-4 mx-auto">
+    <div class="col-4 mt-4 mx-auto">
       <div class="card mx-auto">
         <div class="card-body">
           <h5 class="card-title">Ejemplo # 1</h5>
           <p class="card-text">
             Imprimir el mes del año correspondiente a un número digitado por el usuario
           </p>
-          <a class="show-example-purple d-block">Ver ejemplo</a>
+          <a [routerLink]="GO_EJ1" routerLinkActive="router-link-active"  class="show-example-purple d-block">Ver ejemplo</a>
         </div>
       </div>
     </div>
-    <div class="col-3 mt-4 mx-auto">
+    <div class="col-4 mt-4 mx-auto">
       <div class="card mx-auto">
         <div class="card-body">
           <h5 class="card-title">Ejemplo # 2</h5>
           <p class="card-text">
-            Realizar un programa que le permita al usuario ingresar un entero de dos dígitos, y determinar si sus DOS dígitos son números primos
+            De acuerdo a un número escrito por el usuario, imprimir a que día de la semana pertenece.
           </p>
-          <a class="show-example-purple d-block">Ver ejemplo</a>
+          <a [routerLink]="GO_EJ2" routerLinkActive="router-link-active"  class="show-example-purple d-block">Ver ejemplo</a>
         </div>
       </div>
     </div>
-    <div class="col-3 mt-4 mx-auto">
+    <div class="col-4 mt-4 mx-auto">
       <div class="card mx-auto">
         <div class="card-body">
           <h5 class="card-title">Ejemplo # 3</h5>
           <p class="card-text">
-            De acuerdo a un número escrito por el usuario, imprimir a que día de la semana pertenece.
+            Realizar un programa que le permita al usuario ingresar un entero de dos dígitos, y determinar si sus DOS dígitos son números primos
           </p>
-          <a class="show-example-purple d-block">Ver ejemplo</a>
+          <a [routerLink]="GO_EJ3" class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 mt-4 mx-auto">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 4</h5>
+          <p class="card-text">
+            Realice un programa que convierta de centímetros a pulgadas y de libras a kilogramos según la opción que escoja el usuario
+          </p>
+          <a [routerLink]="GO_EJ4" class="show-example-purple d-block">Ver ejemplo</a>
         </div>
       </div>
     </div>

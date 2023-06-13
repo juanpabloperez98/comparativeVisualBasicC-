@@ -1,0 +1,73 @@
+<section class="initial-section maxwidth mx-auto">
+  <div class="row mx-auto">
+    <div class="col-4">
+      <h3 class="mb-3">Código en C#</h3>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-cs">
+          namespace Ejemplo4&#123;
+            class Program&#123;
+                static void Main(string[] args)&#123;
+                    int op,valor;
+                    Console.WriteLine("1)Convertir de centímetros a pulgadas 2)Convertir de líbra a kilogramos");
+                    Console.WriteLine("Ingresa la opción: ");
+                    op = Int32.Parse(Console.ReadLine());
+                    Console.WriteLine("Ingresa valor: ");
+                    valor = Int32.Parse(Console.ReadLine());
+                    switch(op)&#123;
+                        case 1:&#123;
+                            double pulgadas = valor/2.54;
+                            Console.WriteLine("Centimetros: &#123;0&#125; pulgadas: &#123;1&#125;",(valor,pulgadas));
+                            break;
+                        &#125;
+                        case 2:&#123;
+                            double kilogramos = valor * (1/2.21);
+                            Console.WriteLine("Libra: &#123;0&#125; kilogramos: &#123;1&#125;",(valor,kilogramos));
+                            break;
+                        &#125;
+                        default:&#123;
+                            Console.WriteLine("Opción no valida");
+                            break;
+                        &#125;
+                    &#125;
+                &#125;
+            &#125;
+        &#125;
+        </code>
+        <span class="line_paint" [style.top]="top_style1"> </span>
+      </pre>
+    </div>
+    <div class="col-4">
+      <h3 class="mb-3">Código en VisualBasic</h3>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-vb">&#123;&#123; CODECVB &#125;&#125;</code>
+        <span class="line_paint" [style.top]="top_style2"> </span>
+      </pre>
+    </div>
+    <div class="col-4">
+      <div class="row mx-auto">
+        <div class="col-12">
+          <h5>Variables</h5>
+          <p class="pcontainerexplain">
+            &#123;&#123; variable_line &#125;&#125;
+          </p>
+          <!-- [ngClass]="&#123;'desactivate': !inputShow&#125;" -->
+          <!-- [ngClass]="&#123;'desactivate': !inputShow&#125;" -->
+          <h5>Explicación</h5>
+          <p class="pcontainerexplain">
+            &#123;&#123; text_explain &#125;&#125;
+          </p>
+          <h5 [ngClass]="&#123;'desactivate': !inputShow&#125;" >Datos</h5>
+          <p [ngClass]="&#123;'desactivate': !inputShow&#125;" class="pcontainerexplain">
+            <input type="text" placeholder="Ingresa numero" [(ngModel)]="valueField">
+          </p>
+        </div>
+        <div class="col-12 text-center">
+          <a class="show-example-purple" (click)="next()">Siguiente</a>
+          <!-- <a class="arrow_tag" (click)="next()">
+            <i class="arrow right"></i>
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
