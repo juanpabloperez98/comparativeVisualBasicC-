@@ -15,6 +15,7 @@ import { EjemploMultiples1Component } from './ejemplosMultiples/ejemplo-multiple
 import { EjemploMultiples2Component } from './ejemplosMultiples/ejemplo-multiples2/ejemplo-multiples2.component';
 import { EjemploMultiples3Component } from './ejemplosMultiples/ejemplo-multiples3/ejemplo-multiples3.component';
 import { EjemploMultiples4Component } from './ejemplosMultiples/ejemplo-multiples4/ejemplo-multiples4.component';
+import { EjemploMultiples5Component } from './ejemplosMultiples/ejemplo-multiples5/ejemplo-multiples5.component';
 
 
 
@@ -31,7 +32,8 @@ import { EjemploMultiples4Component } from './ejemplosMultiples/ejemplo-multiple
     EjemploMultiples1Component,
     EjemploMultiples2Component,
     EjemploMultiples3Component,
-    EjemploMultiples4Component
+    EjemploMultiples4Component,
+    EjemploMultiples5Component
   ],
   imports: [
     CommonModule,

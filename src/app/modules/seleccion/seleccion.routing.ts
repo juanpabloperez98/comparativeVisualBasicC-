@@ -11,6 +11,7 @@ import { EjemploMultiples1Component } from "./ejemplosMultiples/ejemplo-multiple
 import { EjemploMultiples2Component } from "./ejemplosMultiples/ejemplo-multiples2/ejemplo-multiples2.component";
 import { EjemploMultiples3Component } from "./ejemplosMultiples/ejemplo-multiples3/ejemplo-multiples3.component";
 import { EjemploMultiples4Component } from "./ejemplosMultiples/ejemplo-multiples4/ejemplo-multiples4.component";
+import { EjemploMultiples5Component } from "./ejemplosMultiples/ejemplo-multiples5/ejemplo-multiples5.component";
 
 
 
@@ -65,6 +66,10 @@ export const seleccionRoutes: Routes = [
       {
         path:'multiples/ejemplo4',
         component:EjemploMultiples4Component,
+      },
+      {
+        path:'multiples/ejemplo5',
+        component:EjemploMultiples5Component,
       },
     ]
   },

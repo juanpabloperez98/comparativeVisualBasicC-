@@ -63,6 +63,8 @@ End Module
     }
     `
 
+    GO_EJ1 = '/estructuras_repetitivas/for/ejemplo1'
+
   buttonexample1 = true;
 
 

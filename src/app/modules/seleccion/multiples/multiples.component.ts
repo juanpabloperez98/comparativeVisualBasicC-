@@ -113,6 +113,7 @@ End Sub
   GO_EJ2 = '/estructuras_seleccion/multiples/ejemplo2'
   GO_EJ3 = '/estructuras_seleccion/multiples/ejemplo3'
   GO_EJ4 = '/estructuras_seleccion/multiples/ejemplo4'
+  GO_EJ5 = '/estructuras_seleccion/multiples/ejemplo5'
 
   constructor(
     private highlightService: HighlightService,

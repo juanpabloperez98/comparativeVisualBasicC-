@@ -6,14 +6,14 @@ import Swal from 'sweetalert2';
 import { Direction } from 'src/app/modules/secuencia/utils/direction.enum';
 
 @Component({
-  selector: 'app-ejemplo-multiples4',
-  templateUrl: './ejemplo-multiples4.component.html',
-  styleUrls: ['./ejemplo-multiples4.component.scss']
+  selector: 'app-ejemplo-multiples5',
+  templateUrl: './ejemplo-multiples5.component.html',
+  styleUrls: ['./ejemplo-multiples5.component.scss']
 })
-export class EjemploMultiples4Component implements OnInit {
+export class EjemploMultiples5Component implements OnInit {
 
   current_line = 1;
-  max_line = 30;
+  max_line = 24;
   top1 = 16;
   top2 = 16;
   top_style1 = this.top1 + 'px';
@@ -23,9 +23,6 @@ export class EjemploMultiples4Component implements OnInit {
 
   //Program values
   op:number = 0;
-  valor:number = 0;
-  pulgadas:number = 0;
-  kilogramos:number = 0;
 
 
   lines_jump: number[] = [
@@ -36,17 +33,7 @@ export class EjemploMultiples4Component implements OnInit {
     Direction.thirdCode,
     Direction.firstCode,
     Direction.thirdCode,
-    Direction.firstCode,
     Direction.thirdCode,
-    Direction.thirdCode,
-    Direction.thirdCode,
-    Direction.secondCode,
-    Direction.thirdCode,
-    Direction.thirdCode,
-    Direction.firstCode,
-    Direction.firstCode,
-    Direction.thirdCode,
-    Direction.secondCode,
     Direction.thirdCode,
     Direction.thirdCode,
     Direction.firstCode,
@@ -59,26 +46,26 @@ export class EjemploMultiples4Component implements OnInit {
     Direction.thirdCode,
     Direction.firstCode,
     Direction.firstCode,
+    Direction.thirdCode,
+    Direction.thirdCode,
+    Direction.firstCode,
+    Direction.firstCode,
+
   ]
 
-  CODECVB = ` Sub Ejemplo4()
-  Dim op, valor As Integer
-  MsgBox ("1Convertir de centímetros a pulgadas 2)Convertir de líbra a kilogramos")
-  op = InputBox("Ingresa la opción: ")
-  valor = InputBox("Ingresa valor: ")
-  Select Case op
-    Case 1
-          Dim pulgadas As Double
-          pulgadas = valor / 2.54
-          MsgBox ("Centimetros: " & valor & " pulgadas: " & pulgadas)
-    Case 2
-          Dim kilogramos As Double
-          kilogramos = valor * (1 / 2.21)
-          MsgBox ("Centimetros: " & valor & " pulgadas: " & pulgadas)
-    Case Default
-          MsgBox ("Opción no valida")
-  End Select
-End Sub
+  CODECVB = ` Sub Ejemplo5()
+    Dim opcion As Integer
+    MsgBox ("1.)Computadores - 2.)Celulares")
+    opcion = InputBox("Ingrese una categoria:")
+    Select Case opcion
+        Case 1:
+            MsgBox ("Computador Acer: 1.000.000 - Computador Asus: 1.600.000")
+        Case 2:
+            MsgBox ("Celular iPhone 6: 1.800.000 - Celular Samsung j5: 700.000")
+        Case Else:
+            MsgBox ("No existe esta categoria")
+    End Select
+  End Sub
   `
 
   explain = [
@@ -95,47 +82,31 @@ End Sub
       "",
     ],
     [
-      "Se definen la variables op y valor de tipo entero, en los dos códigos",
+      "Se definen la variables opcion de tipo int en los dos códigos",
       "",
     ],
     [
-      "Despues de imprime en pantalla las opciones que puede escoger el usuario",
+      "Se imprime un mensaje indicando cuales son las opciones, en este caso 1 para computadores 2 para celulares",
       "",
     ],
     [
-      "Se pide al usuario que ingrese la opción, en el código de C#",
+      "Se imprime un mensjae en el código de C# pidiendo que ingrese la categoría",
       "",
     ],
     [
-      "Se captura el valor ingresado por el usuario en la variable op",
+      "Se captura el valor ingresado por el usuario en la variable opcion declarada anteriormente",
       "",
     ],
     [
-      "Se pide al usuario que el valor a convertir, en el código de C#",
+      "Luego se utiliza la sentencia switch pasando como valor de comparación la variable opcion",
       "",
     ],
     [
-      "Se captura el valor ingresado por el usuario y se almacena en la variable valor",
+      "Como la variable opcion es igual a 1 entonces entra en el case 1",
       "",
     ],
     [
-      "Luego se utiliza la sentencia switch pasando como valor de comparación la variable op",
-      "",
-    ],
-    [
-      "Como la variable op es igual a 1 entonces entra en el case 1",
-      "",
-    ],
-    [
-      "Se define la variable pulgadas de tipo double en el código de visual basic",
-      "",
-    ],
-    [
-      "Luego se iguala la variable pulgadas, a la operación de la variable valor dividida entre 2.54",
-      "",
-    ],
-    [
-      "Se imprime la variables valor y pulgadas",
+      "Se imprime los precios de los computadores",
       "",
     ],
     [
@@ -147,19 +118,11 @@ End Sub
       "",
     ],
     [
-      "Como la variable op es igual a 2 entonces entra en el case 2",
+      "Como la variable opcion es igual a 2 entonces entra en el case 2",
       "",
     ],
     [
-      "Se define la variable kilogramos de tipo double en el código de visual basic",
-      "",
-    ],
-    [
-      "Luego se iguala la variable kilogramos, a la operación de la variable valor multiplicada entre (1/2,21), esto para poder convertir a kilogramos el valor de libras",
-      "",
-    ],
-    [
-      "Se imprime la variables valor y kilogramos",
+      "Se imprime los precios de los celulares",
       "",
     ],
     [
@@ -171,11 +134,11 @@ End Sub
       "",
     ],
     [
-      "Como la variable op no es igual a ningun caso entonces entra al default",
+      "Como la variable opcion no es igual a ningun caso entonces entra al default",
       "",
     ],
     [
-      "Se imprime que la opción es no valida",
+      "Se imprime que no existe esa categoria",
       "",
     ],
     [
@@ -231,18 +194,20 @@ End Sub
   }
 
   add_variable = () => {
+    if(this.current_line == 8){
+      this.variable_line = `opcion = ${this.op}`
+      return
+    }
     if(this.current_line == 10){
-      this.variable_line = `op = ${this.op}`
+      this.variable_line = `Computador Acer: 1.000.000 - Computador Asus: 1.600.000`
       return
     }
-    if(this.current_line == 13 || this.current_line == 14){
-      this.pulgadas = this.valor/2.54;
-      this.variable_line = `valor = ${this.valor} - pulgadas = ${this.pulgadas.toFixed(2)}`
+    if(this.current_line == 14){
+      this.variable_line = `Celular iPhone 6: 1.800.000 - Celular Samsung j5: 700.000`
       return
     }
-    if(this.current_line == 19 || this.current_line == 20){
-      this.kilogramos = this.valor * (1/2.21);
-      this.variable_line = `valor = ${this.valor} - kilogramos = ${this.kilogramos.toFixed(2)}`
+    if(this.current_line == 18){
+      this.variable_line = `No existe esta categoria`
       return
     }
   }
@@ -258,7 +223,7 @@ End Sub
   }
 
   showInput = () => {
-    if(this.current_line == 7 || this.current_line == 9){
+    if(this.current_line == 7){
       this.inputShow = true;
     }else{
       this.inputShow = false;
@@ -303,19 +268,6 @@ End Sub
         this.valueField = "";
         break;
       }
-      case 10:{
-        if(this.valueField == ""){
-          Swal.fire('Ingrese un valor','Debe ingresar un valor para continuar','error');
-          this.back_code();
-        }
-        if(this.valueField != "" && Number.isNaN(parseInt(this.valueField))){
-          Swal.fire('Ingrese un numero valido','Debe ingresar un numero valido para continuar','error');
-          this.back_code();
-        }
-        this.valor = parseInt(this.valueField);
-        this.valueField = "";
-        break;
-      }
     }
   }
 
@@ -332,12 +284,8 @@ End Sub
         break;
       }
       case Direction.thirdCode:{
-        if(this.current_line == 7){
-          this.less_top_code1();
-        }else{
-          this.less_top_code1();
-          this.less_top_code2();
-        }
+        this.less_top_code1();
+        this.less_top_code2();
       }
     }
     this.change_explain();
@@ -346,17 +294,17 @@ End Sub
 
   jump = () => {
     switch(this.current_line){
-      case 11:{
+      case 9:{
         if(this.op == 1){
 
         }else if(this.op == 2){
-          for (let i = 0; i < 6; i++) {
+          for (let i = 0; i < 4; i++) {
             this.current_line += 1;
             this.change_line();
             this.change_explain();
           }
         }else{
-          for (let i = 0; i < 12; i++) {
+          for (let i = 0; i < 8; i++) {
             this.current_line += 1;
             this.change_line();
             this.change_explain();
@@ -364,20 +312,21 @@ End Sub
         }
         break;
       }
-      case 17:{
-        for (let i = 0; i < 10; i++) {
+      case 13:{
+        for (let i = 0; i < 8; i++) {
           this.current_line += 1;
           this.change_line();
           this.change_explain();
         }
         break;
       }
-      case 23:{
-          for (let i = 0; i < 4; i++) {
-            this.current_line += 1;
-            this.change_line();
-            this.change_explain();
-          }
+      case 17:{
+        for (let i = 0; i < 4; i++) {
+          this.current_line += 1;
+          this.change_line();
+          this.change_explain();
+        }
+        break;
       }
     }
   }
@@ -402,3 +351,4 @@ End Sub
   }
 
 }
+
