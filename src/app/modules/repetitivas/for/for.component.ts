@@ -64,6 +64,8 @@ End Module
     `
 
     GO_EJ1 = '/estructuras_repetitivas/for/ejemplo1'
+    GO_EJ2 = '/estructuras_repetitivas/for/ejemplo2'
+    GO_EJ3 = '/estructuras_repetitivas/for/ejemplo3'
 
   buttonexample1 = true;
 

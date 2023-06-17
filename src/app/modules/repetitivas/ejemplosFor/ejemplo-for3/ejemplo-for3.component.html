@@ -1,0 +1,64 @@
+<section class="initial-section maxwidth mx-auto">
+  <div class="row mx-auto">
+    <div class="col-4">
+      <h3 class="mb-3">Código en C#</h3>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-cs">
+          namespace Ejemplo3&#123;
+              class Program&#123;
+                  static void Main(string[] args)&#123;
+                      int n,x,y,z,i;
+                      x = 0;
+                      y = 1;
+                      z = 1;
+                      Console.WriteLine("Ingrese el numero de elementos: ");
+                      n = Int32.Parse(Console.ReadLine());
+                      Console.WriteLine("1");
+                      for(i = 0; i < n; i++)&#123;
+                          z = x + y;
+                          Console.WriteLine("&#123;0&#125;",z);
+                          x = y;
+                          y = z;
+                      &#125;
+                  &#125;
+              &#125;
+          &#125;
+        </code>
+        <span class="line_paint" [style.top]="top_style1"> </span>
+      </pre>
+    </div>
+    <div class="col-4">
+      <h3 class="mb-3">Código en VisualBasic</h3>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-vb">&#123;&#123; CODECVB &#125;&#125;</code>
+        <span class="line_paint" [style.top]="top_style2"> </span>
+      </pre>
+    </div>
+    <div class="col-4">
+      <div class="row mx-auto">
+        <div class="col-12">
+          <h5>Variables</h5>
+          <p class="pcontainerexplain">
+            &#123;&#123; variable_line &#125;&#125;
+          </p>
+          <!-- [ngClass]="&#123;'desactivate': !inputShow&#125;" -->
+          <!-- [ngClass]="&#123;'desactivate': !inputShow&#125;" -->
+          <h5>Explicación</h5>
+          <p class="pcontainerexplain">
+            &#123;&#123; text_explain &#125;&#125;
+          </p>
+          <h5 [ngClass]="&#123;'desactivate': !inputShow&#125;" >Datos</h5>
+          <p [ngClass]="&#123;'desactivate': !inputShow&#125;" class="pcontainerexplain">
+            <input type="text" placeholder="Ingresa numero" [(ngModel)]="valueField">
+          </p>
+        </div>
+        <div class="col-12 text-center">
+          <a class="show-example-purple" (click)="next()">Siguiente</a>
+          <!-- <a class="arrow_tag" (click)="next()">
+            <i class="arrow right"></i>
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
