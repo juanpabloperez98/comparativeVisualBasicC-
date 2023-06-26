@@ -1,0 +1,150 @@
+<section class="initial-section maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-12 mt-5">
+      <h3>Estructuras de datos</h3>
+    </div>
+    <div class="col-6 mx-auto content-img mt-5">
+      <h3>Arrays, arreglos o vectores</h3>
+      <img [src]="LISTASPATH" class="img_estrcutura" alt="tipos_datos.png">
+    </div>
+    <div class="col-6 mx-auto mt-5">
+      <h3>¿Que son los arrays, arreglos o vectores?</h3>
+      <p class="text-start">
+        Estos son el tipo de estructura de dato más conocida en programación, y no es de extraño ya que la utilidad se
+        basa en ser utilizados para almacenar múltiples valores en una única variable. En términos de arquitectura de
+        computadores, estos apartan espacio o posiciones en memoria continuas, permitiendo que se pueda acceder a ellos
+        rápidamente, se usan cuando se necesita guardar más de un dato o información en una variable. La analogía de los
+        vectores puede tomarse como un tren de N vagones, donde cada vagón es un espacio de memoria que almacena una
+        variable.
+    </div>
+  </div>
+</section>
+<section class="purple_color">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3>Sintaxis</h3>
+      <p>
+        La sintaxis de las listas o arreglos suelen ser teóricamente muy similares tanto en VB como en C#, y se dice que
+        teóricamente puesto que el concepto para poder definir un arreglo es el mismo, pero la sintaxis o la manera de
+        escribirlos o declararlos cambian un poco dependiendo el lenguaje, a continuación, se mostrara acerca de la
+        sintaxis de los arreglos en los dos lenguajes de programación que estamos trabajando.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-6">
+      <h3>Sintaxis VB</h3>
+      <p class="text-start">
+        En Visual Basic la declaración de un array, arreglo o vector se empieza utilizando la palabra reservada Dim
+        definiendo posteriormente el nombre de la variable que va almacenar el arreglo y el tipo de dato, es decir
+        (String, Integer), es importante recalcar que los arreglos no pueden ser infinitos
+      </p>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-vb">{{ CODECVB1 }}</code>
+      </pre>
+    </div>
+    <div class="col-6">
+      <h3>Sintaxis C#</h3>
+      <p class="text-start">
+        Para declarar un arreglo en C# se deben colocar los corchetes después de tipo de dato. Es decir, se debe
+        declarar el tipo de dato del arreglo, seguido de los corchetes y luego el nombre del array. Esta forma de
+        declarar un array se utiliza cuando se desea declarar un array sin inicializar, es decir sin definir el tamaño
+        del array. La otra forma de declarar un array es definiendo el tamaño del mismo, para esto solo se va a declarar
+        una variable y se iguala a la expresión new tipo_de_dato[10], es de esta manera como se guardara en la variable
+        definida el arreglo creado
+      </p>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-cs">{{ CODECSHARP1 }}</code>
+      </pre>
+    </div>
+  </div>
+</section>
+<section class="purple_color mt-5">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3 class="text-center">Veamos un ejemplo</h3>
+      <p>
+        Supóngase que se debe llevar el registro de 20 valores ingresados por el usuario y a la final poder realizar la
+        suma de cada uno de los valores ingresados por el usuario, como se ha venido trabajando se puede llegar a la
+        conclusión de declarar variables y luego sumar cada una de las variables, pero esto sería poco optimo, adicional
+        a esto no sería dinámico, dado el caso de que en un futuro no se necesiten 20 valores sino más, para este tipo
+        de problemas se pueden utilizar los arrays, en el cual se ira agregando los datos que desee el usuario, para
+        entender mejor a continuación un ejemplo.
+      </p>
+      <a class="show-example-purple mt-5" [ngClass]="{desactivate: !buttonexample1}" (click)="activateCode(1)">Ver
+        ejemplo</a>
+      <div class="row mx-auto" [ngClass]="{desactivate: buttonexample1}">
+        <div class="col-6">
+          <h3 class="text-center">Ejemplo VB</h3>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-cs">{{ CODECSHARP2 }}
+            </code>
+          </pre>
+        </div>
+        <div class="col-6">
+          <h3 class="text-center">Ejemplo C#</h3>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-vb">{{ CODECVB2 }}</code>
+          </pre>
+        </div>
+        <div class="col-12">
+          <p>
+            NOTA: Como se puede visualizar, para poder almacenar un elemento dentro de un arreglo es necesario definir
+            la posición en la que se desea agregar dicho elemento
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto mb-5">
+  <div class="row mx-auto text-center">
+    <div class="col-12">
+      <h3>Vamos a los ejemplos</h3>
+      <p class="text-start">
+        A continuación, se presentan una serie de ejemplos con los cuales se busca afianzar un poco más el conocimiento
+        adquirido en esta sección, cada ejemplo cuenta con una forma interactiva de poder llevarlos a cabo, en la
+        presentación de cada ejemplo se da una pequeña descripción de lo que se busca explicar.
+      </p>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 1</h5>
+          <p class="card-text">
+            Escribir un programa que almacene en una lista números aleatorios, y después muestre la suma de todos los
+            números que fueron almacenados, la cantidad de números agregar es definida por el usuario, para ello se le
+            va a pedir que ingrese el número de elementos que desea agregar, la cantidad total de elementos no puede ser
+            mayor a 5
+          </p>
+          <a [routerLink]="GO_EJ1" class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 2</h5>
+          <p class="card-text">
+            Dada una lista de números definida por usted, crear un programa que le pida un número al usuario, y
+            determine cuantas veces se repite el número ingresado por el usuario
+          </p>
+          <a [routerLink]="GO_EJ2" class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 3</h5>
+          <p class="card-text">
+            Crear un programa que calcule el producto escalar entre dos listas de un mismo tamaño
+          </p>
+          <a [routerLink]="GO_EJ3" class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

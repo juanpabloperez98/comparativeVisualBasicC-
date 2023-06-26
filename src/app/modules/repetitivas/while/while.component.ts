@@ -67,6 +67,12 @@ End Sub
   }
   `
 
+  GO_EJ1 = '/estructuras_repetitivas/while/ejemplo1'
+  GO_EJ2 = '/estructuras_repetitivas/while/ejemplo2'
+  GO_EJ3 = '/estructuras_repetitivas/while/ejemplo3'
+  GO_EJ4 = '/estructuras_repetitivas/while/ejemplo4'
+  GO_EJ5 = '/estructuras_repetitivas/while/ejemplo5'
+
   buttonexample1 = true;
 
 

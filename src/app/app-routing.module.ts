@@ -35,6 +35,15 @@ export const AppRoutes: Routes = [
     ]
   },
   {
+    path: 'estructura_datos',
+    children:[
+      {
+        path:'',
+        loadChildren: () => import('./modules/datos/datos.module').then( m => m.DatosModule)
+      }
+    ]
+  },
+  {
     path: 'funcion',
     children:[
       {

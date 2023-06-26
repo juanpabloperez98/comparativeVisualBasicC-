@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
       'name':'Estructura Datos',
       'context':'Lo que se busca con este módulo es mostrar la función que cumplen las estructuras de datos para organizar, almacenar y estructuras los datos que se utilizan a la hora de desarrollar un programa.',
       'img':'../../assets/home/datos.png',
-      'routerlink':'/funcion/intro'
+      'routerlink':'/estructura_datos/intro'
     },
     {
       'name':'Funciones',
