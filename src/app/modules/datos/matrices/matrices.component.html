@@ -1,1 +1,144 @@
-<p>matrices works!</p>
+<section class="initial-section maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-12 mt-5">
+      <h3>Estructuras de datos</h3>
+    </div>
+    <div class="col-6 mx-auto content-img mt-5">
+      <h3>Matrices</h3>
+      <img [src]="MATRICESPATH" class="img_estrcutura" alt="tipos_datos.png">
+    </div>
+    <div class="col-6 mx-auto mt-5">
+      <h3>¿Que son las matrices?</h3>
+      <p class="text-start">
+        Un arreglo (matriz) es una colección ordenada de datos (tanto primitivos u objetos dependiendo del lenguaje).
+        Los arreglos (matrices) se emplean para almacenar múltiples valores en una sola variable, frente a las variables
+        que sólo pueden almacenar un valor (por cada variable). Cada elemento del arreglo (matriz) tiene un número al
+        que está asociado, llamado "índice numérico" (numeric index), que permite acceder a él. La intersección de una
+        fila y una columna de la matriz son las casillas y cada una de ellas podrá poseer información, simple o compleja
+        (ya dependerá de nuestras necesidades)
+    </div>
+  </div>
+</section>
+<section class="purple_color">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3>Sintaxis</h3>
+      <p>
+        Una matriz tiene la sintaxis similar a los arreglos o listas unidimensionales, la diferencia con respecto a las
+        matrices es que en la matriz es necesario declarar dos valores, los cuales representaran el número de filas y
+        columnas del tamaño que va a tener la matriz, es de esta manera en cómo se puede ver una matriz como un tablero
+        donde se enumera cada posición de la matriz por un número de fila y un número de columna
+      </p>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto">
+  <div class="row mx-auto text-center">
+    <div class="col-6">
+      <h3>Sintaxis VB</h3>
+      <p class="text-start">
+        Para declarar una matriz en visual basic solo basta con utilizar la palabra reservada Dim declarando así el
+        nombre de la matriz, seguido del tipo de dato que va almacenar la matriz, ya sea integer, double, string, etc.
+      </p>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-vb">{{ CODECVB1 }}</code>
+      </pre>
+    </div>
+    <div class="col-6">
+      <h3>Sintaxis C#</h3>
+      <p class="text-start">
+        Las matrices en C# no son diferentes a los arreglos unidimensionales que se han visto anteriormente, a
+        diferencia de estos, para poder crear una matriz o un arreglo bidimensional, se necesita primero especificar el
+        tipo de dato que va almacenar la matriz, ya sea entero, string, etc. Seguido después de paréntesis y en la mitad
+        una coma [ , ] y seguido del nombre que se quiera dar a la matriz, es de esta manera que declaramos que se
+        define la matriz, sin embargo otro paso siguiente es definir la longitud de la matriz, es decir el número de
+        filas y columnas que esta tendrá, para ello se iguala la variable que se había declarado anteriormente a la
+        expresión new tipo_de_dato y entre paréntesis se define el número de filas y columnas respectivamente.
+      </p>
+      <pre class="language-language-markup line-numbers">
+        <code class="language-cs">{{ CODECSHARP1 }}</code>
+      </pre>
+    </div>
+  </div>
+</section>
+<section class="purple_color mt-5">
+  <div class="row mx-auto maxwidth text-start p-5">
+    <div class="col-12">
+      <h3 class="text-center">Veamos un ejemplo</h3>
+      <p>
+        Para entender un poco mejor el tema véase un ejemplo de para que se puede implementar una matriz, supóngase que
+        le dicen que se necesita crear un programa que almacene las notas de 3 estudiantes y luego determine cual de los
+        3 estudiantes ha adquirido la mayor nota. Es fácil deducir que se podrían declarar 3 arreglos y su longitud será
+        el número de notas que se vayan a ingresar, pero esta vez utilicemos las matrices para resolver este ejercicio
+      </p>
+      <a class="show-example-purple mt-5" [ngClass]="{desactivate: !buttonexample1}" (click)="activateCode(1)">Ver
+        ejemplo</a>
+      <div class="row mx-auto" [ngClass]="{desactivate: buttonexample1}">
+        <div class="col-6">
+          <h3 class="text-center">Ejemplo VB</h3>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-cs">{{ CODECSHARP2 }}
+            </code>
+          </pre>
+        </div>
+        <div class="col-6">
+          <h3 class="text-center">Ejemplo C#</h3>
+          <pre class="language-language-markup line-numbers">
+            <code class="language-vb">{{ CODECVB2 }}</code>
+          </pre>
+        </div>
+        <div class="col-12">
+          <p>
+            NOTA: Para acceder a los elementos que se encuentran dentro de una matriz es necesario especificar la fila y
+            la columna en la que este se encuentra
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mt-5 maxwidth mx-auto mb-5">
+  <div class="row mx-auto text-center">
+    <div class="col-12">
+      <h3>Vamos a los ejemplos</h3>
+      <p class="text-start">
+        A continuación, se presentan una serie de ejemplos con los cuales se busca afianzar un poco más el conocimiento
+        adquirido en esta sección, cada ejemplo cuenta con una forma interactiva de poder llevarlos a cabo, en la
+        presentación de cada ejemplo se da una pequeña descripción de lo que se busca explicar.
+      </p>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 1</h5>
+          <p class="card-text">
+            Crear un programa que permita llenar e imprimir una matriz de enteros con orden NxN definido por el usuario
+          </p>
+          <a [routerLink]="GO_EJ1" class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 2</h5>
+          <p class="card-text">
+            Crear una matriz de 3×3 con los números del 1 al 9. Mostrar por pantalla, tal como aparece en la matriz.
+          </p>
+          <a [routerLink]="GO_EJ2" class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 mt-4">
+      <div class="card mx-auto">
+        <div class="card-body">
+          <h5 class="card-title">Ejemplo # 3</h5>
+          <p class="card-text">
+            Crear un programa que realice la suma entre una matriz m1 y otra m2, el orden de la matriz se le deberá pedir al usuario y se deberán llenar con números aleatorios de 1 al 10
+          </p>
+          <a [routerLink]="GO_EJ3" class="show-example-purple d-block">Ver ejemplo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

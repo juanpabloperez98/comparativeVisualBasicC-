@@ -73,8 +73,8 @@ End Sub
     `
 
   GO_EJ1 = '/estructura_datos/listas/ejemplo1'
-  GO_EJ2 = '/estructuras_repetitivas/for/ejemplo2'
-  GO_EJ3 = '/estructuras_repetitivas/for/ejemplo3'
+  GO_EJ2 = '/estructura_datos/listas/ejemplo2'
+  GO_EJ3 = '/estructura_datos/listas/ejemplo3'
 
   buttonexample1 = true;
 
