@@ -26,6 +26,8 @@ export class FuncionComponent implements OnInit {
 End Function
   `
 
+  GO_EJ1 = '/estructuras_repetitivas/for/ejemplo2'
+
   constructor(
     private highlightService: HighlightService,
   ) { }

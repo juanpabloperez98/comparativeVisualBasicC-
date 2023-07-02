@@ -9,6 +9,9 @@ import { EjemploListas1Component } from './ejemplosListas/ejemplo-listas1/ejempl
 import { FormsModule } from '@angular/forms';
 import { EjemploListas2Component } from './ejemplosListas/ejemplo-listas2/ejemplo-listas2.component';
 import { EjemploListas3Component } from './ejemplosListas/ejemplo-listas3/ejemplo-listas3.component';
+import { EjemploMatrices1Component } from './ejemploMatrices/ejemplo-matrices1/ejemplo-matrices1.component';
+import { EjemploMatrices2Component } from './ejemploMatrices/ejemplo-matrices2/ejemplo-matrices2.component';
+import { EjemploMatrices3Component } from './ejemploMatrices/ejemplo-matrices3/ejemplo-matrices3.component';
 
 
 
@@ -19,7 +22,10 @@ import { EjemploListas3Component } from './ejemplosListas/ejemplo-listas3/ejempl
     MatricesComponent,
     EjemploListas1Component,
     EjemploListas2Component,
-    EjemploListas3Component
+    EjemploListas3Component,
+    EjemploMatrices1Component,
+    EjemploMatrices2Component,
+    EjemploMatrices3Component
   ],
   imports: [
     CommonModule,
